@@ -9,8 +9,4 @@
 	<select id="getSample" resultType="kr.go.me.dto.SampleDTO">
 		select * from sample where id=#{id}
 	</select>
-	<insert id="addSample">
-		insert into sample(id,pw) values #{id}, #{pw}
-	</insert>
-
 </mapper>

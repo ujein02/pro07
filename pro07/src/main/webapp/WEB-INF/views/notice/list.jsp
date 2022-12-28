@@ -11,10 +11,26 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 <title>공지사항 목록</title>
+    <!-- 헤드 부분 인클루드 -->
+    <jsp:include page="../include/head.jsp"></jsp:include>
+    <link rel="stylesheet" href="${path1 }/include/datatables.min.css">
+	<script src="${path1 }/include/datatables.min.js"></script>
+	<script>
+	$(document).ready( function () {
+	    $('#tb1').DataTable({
+	    	  aaSorting: []
+	    	  //, order : [[ 0, "asc" ]]
+	   	});
+	});
+	</script>
 </head>
 <body>
+<header id="header">
+    <!-- 헤더 부분 인클루드 -->
+    <jsp:include page="../include/header.jsp"></jsp:include>
+</header>
 	<h2>공지사항 목록 </h2>
-		<table>
+		<table id="tb1">
 			<thead>
 				<tr>
 					<th>No</th>
@@ -34,5 +50,12 @@
 			</c:forEach>
 			</tbody>
 		</table>
+		<div class="button-group">
+			  <a class="button" href="${path1 }/notice/insert">글쓰기</a>
+		</div>
+<footer id="footer" class="footer-nav row expanded collapse">
+    <!-- 푸터 부분 인클루드 -->
+    <jsp:include page="../include/footer.jsp"></jsp:include>
+</footer>		
 </body>
 </html>

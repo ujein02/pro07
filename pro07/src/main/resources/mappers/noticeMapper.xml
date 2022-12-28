@@ -3,14 +3,32 @@
 "-//mybatis.org//DTD Mapper 3.0//EN" 
 "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="notice">
+	<!-- 공지사항 목록 -->
 	<select id="noticeList" resultType="kr.go.me.dto.NoticeDTO">
-		select * from notice
+		select * from notice order by regdate desc
 	</select>
-	<select id="getNotice" resultType="kr.go.me.dto.NoticeDTO">
+	<!-- 글 상세보기 -->
+	<select id="noticeDetail" resultType="kr.go.me.dto.NoticeDTO">
 		select * from notice where tno=#{tno}
 	</select>
-	<insert id="addNotice">
-		insert into notice(tno, title, content, writer, regdate, visited) values (noti_seq.nextval, #{title}, #{content}, 'admin', sysdate, 0)
+	<!-- 글 수 카운트 -->
+	<select id="totalCount" resultType="integer" >
+		select count(*) from notice
+	</select>
+	<!-- 공지사항 등록-->
+	<insert id="noticeInsert">
+		insert into notice values(noti_seq.nextval, #{title}, #{content}, 'admin', sysdate, 0)
 	</insert>
-
+	<!-- 공지사항 삭제 -->
+	<delete id="noticeDelete">
+		delete from notice where tno=#{tno}
+	</delete>
+	<!-- 공지사항 수정 -->
+	<update id="noticeEdit">
+		update notice set title=#{title}, content=#{content} where tno=#{tno}
+	</update>
+	<!-- 조회수 -->
+	<update id="countUp">
+		update notice set visited=visited+1 where tno=#{tno}
+	</update>
 </mapper>

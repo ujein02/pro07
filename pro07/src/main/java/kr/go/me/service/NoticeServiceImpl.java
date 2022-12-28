@@ -29,6 +29,18 @@ public class NoticeServiceImpl implements NoticeService{
 		noticeDAO.addNotice(notice);
 		
 	}
+
+	@Override
+	public void noticeDelete(int tno) throws Exception {
+		noticeDAO.noticeDelete(tno);
+		
+	}
+
+	@Override
+	public void noticeEdit(NoticeDTO dto) throws Exception {
+		noticeDAO.noticeEdit(dto);
+		
+	}
 	
 	
 
