@@ -33,6 +33,9 @@
           </ul>
         </li>
         <li class="nav-item">
+          <a class="nav-link" href="${path1 }/member/agree.do">회원가입</a>
+        </li>
+        <li class="nav-item">
           <a class="nav-link disabled">Disabled</a>
         </li>
       </ul>

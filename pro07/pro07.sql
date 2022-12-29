@@ -33,12 +33,20 @@ id varchar2(20) not null,
 pw varchar2(500) not null, 
 name varchar2(20),
 tel varchar2(20),
-addr varchar2(50),
+addr1 varchar2(200),
+addr2 varchar2(200),
+postcode varchar2(10),
 email varchar2(20),
 regdate date default sysdate
 );
 
+select * from me_user;
 
+create sequence user_mseq;
+
+insert into me_user(no, id, pw, name) values(user_mseq.nextval, 'admin', '1234', '관리자');
+
+commit;
 
 
 -- 묻고 답하기_qna(글번호, 작성자, 글제목, 글내용, 작성일, 읽어본 횟수, 글그룹번호, 답변수준, 글깊이)
