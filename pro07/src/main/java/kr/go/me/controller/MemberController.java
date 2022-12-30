@@ -108,5 +108,11 @@ public class MemberController {
 				return "redirect:loginForm.do";
 			}
 		} 
-
-}
+		
+		//로그아웃
+		@RequestMapping("logout.do")
+		public String memberLogout(HttpSession session) throws Exception {
+			session.invalidate();
+			return "redirect:/";
+		}
+	}

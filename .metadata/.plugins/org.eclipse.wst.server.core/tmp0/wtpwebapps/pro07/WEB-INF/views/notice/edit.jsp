@@ -22,7 +22,7 @@
 	<h2 class="h1">공지사항 글 수정</h2>
       <hr>
 	      <div class="container">
-	      	<form action="${path1 }/notice/edit" method="post">
+	      	<form action="${path1 }/notice/edit.do" method="post">
 			      <table id="table1">
 			      	<tbody>
 			      		<tr>

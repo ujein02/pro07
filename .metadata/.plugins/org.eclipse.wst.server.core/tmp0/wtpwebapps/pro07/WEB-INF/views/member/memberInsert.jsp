@@ -31,7 +31,8 @@
 			      		<tr>
 			      			<th style="background-color:#dcdcdc">아이디</th>
 			      			<td>
-			      				<input type="text" name="user_id" id="user_id" placeholder="아이디 입력" pattern="^[a-z0-9]{5,12}" maxlength="12" required style="width:700px; float:left;">
+			      				<input type="text" name="id" id="id" placeholder="아이디 입력"  maxlength="12" required style="width:700px; float:left;">
+			      				<!-- pattern="^[a-z0-9]{5,12}" -->
 			      				<input type="button" id="idCkBtn" class="button" value="아이디 중복 체크" onclick="idCheck()">
 			      				<input type="hidden" name="idck" id="idck" value="no"/>
 							<c:if test="${empty qid }">
@@ -45,27 +46,21 @@
 			      		<tr>
 			      			<th style="background-color:#dcdcdc">비밀번호</th>
 			      			<td>
-			      				<input type="password" name="user_pw" id="user_pw" placeholder="비밀번호 입력" maxlength="12" required>
+			      				<input type="password" name="pw" id="pw" placeholder="비밀번호 입력" maxlength="12" required>
 			      				<!-- pattern="^(?=.*[A-Za-z])(?=.*\d)(?=.*[$@$!%*#?&])[A-Za-z\d$@$!%*#?&]{8,12}$"  -->
 			      			</td>
 			      		</tr>
 			      		<tr>
 			      			<th style="background-color:#dcdcdc">비밀번호 확인</th>
 			      			<td>
-			      				<input type="password" name="user_pw2" id="user_pw2" placeholder="비밀번호 확인 입력" maxlength="12" required>
+			      				<input type="password" name="pw2" id="pw2" placeholder="비밀번호 확인 입력" maxlength="12" required>
 			      				<!-- pattern="^(?=.*[A-Za-z])(?=.*\d)(?=.*[$@$!%*#?&])[A-Za-z\d$@$!%*#?&]{8,12}$"  -->
 			      			</td>
 			      		</tr>
 			      		<tr>
 			      			<th style="background-color:#dcdcdc">이름</th>
 			      			<td>
-			      				<input type="text" name="user_name" id="user_name" placeholder="이름 입력" maxlength="40" required>
-			      			</td>
-			      		</tr>
-			      		<tr>
-			      			<th style="background-color:#dcdcdc">생년월일</th>
-			      			<td>
-			      				<input type="date" name="birth" id="birth" placeholder="생년월일 입력" required>
+			      				<input type="text" name="name" id="name" placeholder="이름 입력" maxlength="40" required>
 			      			</td>
 			      		</tr>
 			      		<tr>
@@ -101,7 +96,7 @@
 			   </form>   
 			   	<script>
 				$(document).ready(function(){
-					$("#user_id").keyup(function(){
+					$("#id").keyup(function(){
 						$("#idck").val("no");
 						if($(this).val()!=""){
 							$("#msg").html("<strong>아이디 입력중입니다.</strong>");
@@ -113,12 +108,12 @@
 				</script>
 				<script>
 				function idCheck(){
-					if($("#user_id").val()==""){
+					if($("#id").val()==""){
 						alert("아이디를 입력하지 않으셨습니다.");
-						$("#user_id").focus();
+						$("#id").focus();
 						return;
 					} 
-					var params = {	user_id : $("#user_id").val()	} //전송되어질 데이터를 객체로 묶음
+					var params = {	id : $("#id").val()	} //전송되어질 데이터를 객체로 묶음
 					$.ajax({
 						url:"${path1 }/member/idCheck.do",	//아이디가 전송되어질 곳
 						type:"post",		//전송방식
@@ -130,7 +125,7 @@
 							if(idChk==false){	//사용할 수 없는 아이디
 								$("#idck").val("no");
 								$("#msg").html("<strong style='color:red'>기존에 사용되고 있는 아이디 입니다. 다시 입력하시기 바랍니다.</strong>");
-								$("#user_id").focus();
+								$("#id").focus();
 							} else if(idChk==true){	//사용 가능한 아이디
 								$("#idck").val("yes");
 								$("#msg").html("<strong style='color:blue'>사용가능한 아이디 입니다.</strong>");
@@ -141,9 +136,9 @@
 					});
 				}
 				function joinCheck(f){
-					if(f.user_pw.value!=f.user_pw2.value){
+					if(f.pw.value!=f.pw2.value){
 						alert("비밀번호와 비밀번호 확인이 서로 다릅니다.");
-						f.user_pw.focus();
+						f.pw.focus();
 						return false;
 					}
 					if(f.idck.value!="yes"){

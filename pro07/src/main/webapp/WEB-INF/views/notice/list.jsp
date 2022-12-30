@@ -13,8 +13,8 @@
 <title>공지사항 목록</title>
     <!-- 헤드 부분 인클루드 -->
     <jsp:include page="../include/head.jsp"></jsp:include>
-    <link rel="stylesheet" href="${path1 }/include/datatables.min.css">
-	<script src="${path1 }/include/datatables.min.js"></script>
+    <link rel="stylesheet" href="${path1 }/resource/datatables.min.css">
+	<script src="${path1 }/resource/datatables.min.js"></script>
 	<script>
 	$(document).ready( function () {
 	    $('#tb1').DataTable({
@@ -30,7 +30,7 @@
     <jsp:include page="../include/header.jsp"></jsp:include>
 </header>
 	<h2>공지사항 목록 </h2>
-		<table id="tb1">
+		<table class="table" id="tb1">
 			<thead>
 				<tr>
 					<th>No</th>
@@ -44,7 +44,10 @@
 				<tr>
 					<td>${status.count }</td>
 					<td><a href="${path1 }/notice/detail?tno=${notice.tno}">${notice.title }</a></td>
-					<td>${notice.regdate }</td>
+					<td>
+						<fmt:parseDate value="${notice.regdate }" var="regdate" pattern="yyyy-MM-dd HH:mm:ss" />
+			      		<fmt:formatDate value="${regdate }" pattern="yyyy-MM-dd" />
+		      		</td>
 					<td>${notice.visited }</td>
 				</tr>
 			</c:forEach>

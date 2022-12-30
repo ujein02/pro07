@@ -32,13 +32,23 @@
             <li><a class="dropdown-item" href="#">Something else here</a></li>
           </ul>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="${path1 }/member/agree.do">회원가입</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled">Disabled</a>
-        </li>
-      </ul>
+       </ul>
     </div>
   </div>
+  <div class="top-bar-right">
+       <ul class="menu">
+        <c:if test="${empty sid }">
+          <li><a href="${path1 }/member/loginForm.do">로그인</a></li>
+          <li><a href="${path1 }/member/agree.do">회원가입</a></li>
+        </c:if>
+        <c:if test="${not empty sid }">  
+          <li><a href="${path1 }/member/logout.do">로그아웃</a></li>
+          <li><a href="#">회원정보</a></li>
+        </c:if>  
+        <c:if test='${sid eq "admin"}'>
+          <li><a href="#">관리자 페이지</a></li>
+        </c:if>  
+       </ul>
+     </div>
+ 
 </nav>

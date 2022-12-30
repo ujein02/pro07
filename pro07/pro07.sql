@@ -48,6 +48,8 @@ insert into me_user(no, id, pw, name) values(user_mseq.nextval, 'admin', '1234',
 
 commit;
 
+delete from me_user where id='admin';
+
 
 -- 묻고 답하기_qna(글번호, 작성자, 글제목, 글내용, 작성일, 읽어본 횟수, 글그룹번호, 답변수준, 글깊이)
 create table me_qna(
@@ -63,6 +65,9 @@ create table me_qna(
 );
 
 create sequence qna_mseq;
+
+select * from me_qna;
+
 
 commit;
 

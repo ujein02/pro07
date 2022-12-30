@@ -29,7 +29,7 @@ public class NoticeDAOImpl implements NoticeDAO{
 
 	@Override
 	public void addNotice(NoticeDTO notice) throws Exception {
-		sqlSession.insert("notice.noticeInsert");
+		sqlSession.insert("notice.noticeInsert", notice);
 		
 	}
 

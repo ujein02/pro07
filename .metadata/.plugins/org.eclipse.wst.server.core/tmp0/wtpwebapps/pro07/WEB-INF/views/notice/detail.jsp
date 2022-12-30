@@ -45,9 +45,9 @@
 			</tbody>
 		</table>
 		<div class="button-group">
-			  <a class="button" href="${path1 }/notice/list.do">목록</a>
-			  <a class="button" href="${path1 }/notice/delete.do?bno=${dto.tno}">삭제</a>
-			  <a class="button" href="${path1 }/notice/edit.do?bno=${dto.tno}">수정</a>
+			  <a class="button" href="${path1 }/notice/list">목록</a>
+			  <a class="button" href="${path1 }/notice/delete.do?tno=${dto.tno}">삭제</a>
+			  <a class="button" href="${path1 }/notice/edit?tno=${dto.tno}">수정</a>
 			</div>
 <footer id="footer" class="footer-nav row expanded collapse">
     <!-- 푸터 부분 인클루드 -->

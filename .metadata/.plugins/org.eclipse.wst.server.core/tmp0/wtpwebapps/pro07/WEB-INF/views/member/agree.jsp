@@ -914,7 +914,8 @@ padding: 24px; border:2px solid #eee; height:600px; overflow-y:auto; }
 		<label for="ck_item2" class="form-check-label">개인정보처리방침에 동의</label><br><br>
 	</div><br><hr><br>
 	<div class="form-check">
-		<label for="ck_item3" onclick="protocol()" class="form-check-label"><strong>전체 약관에 동의</strong></label>
+		<input type="checkbox" id="ck_item3" name="ck_item3" class="form-check-input" onclick="protocol()">
+		<label for="ck_item3" class="form-check-label"><strong>전체 약관에 동의</strong></label>
 	</div>
 	<br><hr><br>	
 	<div class="btn-group">

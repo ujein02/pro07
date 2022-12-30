@@ -56,5 +56,8 @@ background-size:90% auto; background-repeat:no-repeat; background-position:cente
 	width:25%; height:25%;
 }
 
-
+.title { text-align: center;padding-top:36px; padding-bottom:20px; }
+.agree_fr { width: 1000px; white-space:pre-wrap; margin: 10px auto; 
+padding: 24px; border:3px solid #eee; height:600px; overflow-y:auto; }
+.form-check{margin-left:55px; padding-top:20px;}
 </style>

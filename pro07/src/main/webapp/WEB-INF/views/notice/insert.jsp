@@ -20,7 +20,7 @@
     <jsp:include page="../include/header.jsp"></jsp:include>
 </header>
 	<h2>공지사항 등록 </h2>
-		<form action="${path1 }/notice/insert" method="post">
+		<form action="${path1 }/notice/insert.do" method="post">
 		<table id="table1">
 	      	<tbody>
 	      		<tr>

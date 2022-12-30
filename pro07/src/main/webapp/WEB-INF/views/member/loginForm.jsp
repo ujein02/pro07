@@ -32,7 +32,7 @@
 				<c:if test="${!empty msg }">
 				<script>
 				alert("로그인 실패");
-				document.loginForm.userid.focus();
+				document.loginForm.id.focus();
 				</script>
 				</c:if>
 				<form action="${path1 }/member/signin.do" method="post" name="loginForm">
@@ -41,13 +41,13 @@
 						<tbody>
 							<tr>
 								<th><label for="id"><strong>아이디</strong></label></th>
-								<td><input type="text" name="user_id" id="user_id" size="100" class="single100" placeholder="아이디 입력" required>
+								<td><input type="text" name="id" id="id" size="100" class="single100" placeholder="아이디 입력" required>
 								<!--  pattern="^[a-z0-9]+$"  -->
 								</td>
 							</tr>				
 							<tr>
 								<th><label for="pw"><strong>비밀번호</strong></label></th>
-								<td><input type="password" name="user_pw" id="user_pw"  class="single100" placeholder="비밀번호 입력" required>
+								<td><input type="password" name="pw" id="pw"  class="single100" placeholder="비밀번호 입력" required>
 								<!--  pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"  -->
 								</td>
 							</tr>

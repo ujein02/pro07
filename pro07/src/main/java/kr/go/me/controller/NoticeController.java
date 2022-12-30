@@ -48,7 +48,7 @@ public class NoticeController {
 		dto.setContent(request.getParameter("content"));
 		noticeService.addNotice(dto);
 		
-		return "redirect:list.do";
+		return "redirect:list";
 	}
 	
 	//공지사항 삭제
@@ -57,16 +57,16 @@ public class NoticeController {
 		int tno = Integer.parseInt(request.getParameter("tno"));
 		noticeService.noticeDelete(tno);
 		
-		return "redirect:list.do";
+		return "redirect:list";
 	}
 	
 	//공지사항 수정
-	@GetMapping("edit.do")
+	@GetMapping("edit")
 	public String editForm(HttpServletRequest request, Model model) throws Exception {
 		int tno = Integer.parseInt(request.getParameter("tno"));
 		NoticeDTO dto = noticeService.getNotice(tno);
 		model.addAttribute("dto", dto);
-		return "notice/noticeEdit";
+		return "notice/edit";
 	}
 	
 	@PostMapping("edit.do")
@@ -79,7 +79,7 @@ public class NoticeController {
 		dto.setContent(request.getParameter("content"));
 		noticeService.noticeEdit(dto);
 		
-		return "redirect:list.do";
+		return "redirect:list";
 	}
 	
 	
