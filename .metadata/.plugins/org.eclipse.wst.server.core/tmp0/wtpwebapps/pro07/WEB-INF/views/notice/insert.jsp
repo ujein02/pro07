@@ -19,34 +19,39 @@
     <!-- 헤더 부분 인클루드 -->
     <jsp:include page="../include/header.jsp"></jsp:include>
 </header>
+<section class="section">
+	<div class="container">
 	<h2>공지사항 등록 </h2>
 		<form action="${path1 }/notice/insert.do" method="post">
-		<table id="table1">
+		<table class="table" id="table1">
 	      	<tbody>
 	      		<tr>
-	      			<th>글 제목</th>
+	      			<th><label for="exampleFormControlInput1" class="form-label">글 제목</label></th>
 	      			<td>
-	      				<input type="text" name="title" id="title" placeholder="제목 입력" maxlength="98" required>
+	      				<input type="text" name="title" id="title" placeholder="제목 입력" maxlength="98" required class="form-control">
 	      			</td>
 	      		</tr>
 	      		<tr>
-	      			<th >글 내용</th>
+	      			<th ><label for="exampleFormControlTextarea1" class="form-label">글 내용</label></th>
 	      			<td>
-	      				<textarea name="content" id="content" placeholder="내용 입력" rows="8" cols="100" maxlength="800" required></textarea>
+	      				<textarea name="content" id="content" class="form-control" placeholder="내용 입력" rows="8" cols="100" maxlength="800" required></textarea>
 	      			</td>
 	      		</tr>
-	      		<tr>
-	      			<td colspan="2">
-	      				<input type="submit" class="button" value="글 등록" >
-	      				<a class="button" href="${path1 }/notice/list">글 목록</a>
-		      			</td>
-		      		</tr>
+
 		      	</tbody>
 		      </table>
-	      
+	      	<div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+	      		<div class="btn-group me-2" role="group" aria-label="First group">
+			    	<button type="submit" class="btn btn-dark">등록</button>
+			  	</div>
+		      	<div class="btn-group" role="group" aria-label="Second group">
+			    	<a type="button" href="${path1 }/notice/list" class="btn btn-dark">목록</a>
+			  	</div>
+			</div>
 	    </form>
-		
-<footer id="footer" class="footer-nav row expanded collapse">
+	</div>
+</section>		
+<footer id="footer">
     <!-- 푸터 부분 인클루드 -->
     <jsp:include page="../include/footer.jsp"></jsp:include>
 </footer>		

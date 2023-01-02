@@ -13,36 +13,28 @@
 <title>공지사항 목록</title>
     <!-- 헤드 부분 인클루드 -->
     <jsp:include page="../include/head.jsp"></jsp:include>
-    <link rel="stylesheet" href="${path1 }/resource/datatables.min.css">
-	<script src="${path1 }/resource/datatables.min.js"></script>
-	<script>
-	$(document).ready( function () {
-	    $('#tb1').DataTable({
-	    	  aaSorting: []
-	    	  //, order : [[ 0, "asc" ]]
-	   	});
-	});
-	</script>
 </head>
 <body>
 <header id="header">
     <!-- 헤더 부분 인클루드 -->
     <jsp:include page="../include/header.jsp"></jsp:include>
 </header>
-	<h2>공지사항 목록 </h2>
+<section class="section">
+	<div class="container">
+	<h2 class="title">공지사항 목록 </h2>
 		<table class="table" id="tb1">
 			<thead>
 				<tr>
-					<th>No</th>
-					<th>Title</th>
-					<th>regdate</th>
-					<th>visited</th>
+					<th scope="col">No</th>
+					<th scope="col">Title</th>
+					<th scope="col">regdate</th>
+					<th scope="col">visited</th>
 				</tr>
 			</thead>
 			<tbody>
 			<c:forEach items="${noticeList }" var="notice" varStatus="status">
 				<tr>
-					<td>${status.count }</td>
+					<td scope="row">${status.count }</td>
 					<td><a href="${path1 }/notice/detail?tno=${notice.tno}">${notice.title }</a></td>
 					<td>
 						<fmt:parseDate value="${notice.regdate }" var="regdate" pattern="yyyy-MM-dd HH:mm:ss" />
@@ -53,10 +45,12 @@
 			</c:forEach>
 			</tbody>
 		</table>
-		<div class="button-group">
-			  <a class="button" href="${path1 }/notice/insert">글쓰기</a>
+		<div class="btn-group">
+			  <a class="btn btn-dark" href="${path1 }/notice/insert">글쓰기</a>
 		</div>
-<footer id="footer" class="footer-nav row expanded collapse">
+	</div>
+</section>
+<footer id="footer" >
     <!-- 푸터 부분 인클루드 -->
     <jsp:include page="../include/footer.jsp"></jsp:include>
 </footer>		

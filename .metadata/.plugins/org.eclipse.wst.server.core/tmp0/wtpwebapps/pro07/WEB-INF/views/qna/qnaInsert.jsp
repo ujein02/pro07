@@ -14,11 +14,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>질문하기</title>
     <jsp:include page="../include/head.jsp"/>
-	<link rel="stylesheet" href="${path1 }/resource/datatables.min.css">
-	<script src="${path1 }/resource/datatables.min.js"></script>
-  </head>
+</head>
   <body>
+  <header id="header">
+    <!-- 헤더 부분 인클루드 -->
   <jsp:include page="../include/header.jsp" />
+  </header>
   <section class="section">
     	<div class="container">
 			<h2 class="title">질문 하기</h2>
@@ -26,19 +27,19 @@
 				<table class="table">
 					<tbody>
 						<tr>
-							<th><label for="title">질문 제목</label></th>
-							<td><input type="text" name="title" id="title" placeholder="제목 입력" maxlength="100" class="input" required></td>
+							<th><label label for="exampleFormControlInput1" class="form-label">질문 제목</label></th>
+							<td><input type="text" name="title" id="title" placeholder="제목 입력" maxlength="100" class="form-control" required></td>
 						</tr>
 						<tr>
-							<th><label for="content">질문 내용</label></th>
+							<th><label label for="exampleFormControlInput1" class="form-label">질문 내용</label></th>
 							<td>
-								<textarea cols="100" rows="6" name="content" id="content" maxlength="600" class="textarea"></textarea>
+								<textarea cols="100" rows="6" name="content" id="content" maxlength="600" class="form-control"></textarea>
 							</td>
 						</tr>
 						<tr>
-							<th><label for="author">작성자</label></th>
+							<th><label label for="exampleFormControlInput1" class="form-label">작성자</label></th>
 							<td>
-								<input type="text" name="author" id="author" class="input" value='${sid }' readonly required>
+								<input type="text" name="author" id="author" class="form-control" value='${sid }' readonly required>
 								<input type="hidden" name="lev" id="lev" value="0">
 							</td>
 						</tr>
@@ -53,13 +54,20 @@
 						</tr>
 					</tbody>
 				</table>
-				<div class="btn-group">
-					<button type="submit" class="button is-primary">글 쓰기</button>
-					<a href="${path1 }/qna/list" class="button is-info">목록으로</a>
+				<div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+		      		<div class="btn-group me-2" role="group" aria-label="First group">
+				    	<button type="submit" class="btn btn-dark">등록</button>
+				  	</div>
+			      	<div class="btn-group" role="group" aria-label="Second group">
+				    	<a type="button" href="${path1 }/qna/list" class="btn btn-dark">목록</a>
+				  	</div>
 				</div>
 			</form>
 		</div>	
 	</section>
-  <jsp:include page="../include/footer.jsp"></jsp:include>
+<footer id="footer" >
+    <!-- 푸터 부분 인클루드 -->
+    <jsp:include page="../include/footer.jsp"></jsp:include>
+</footer>		
 </body>
 </html>

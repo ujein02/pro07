@@ -12,19 +12,73 @@
 	<title>Home</title>
 	<!-- 헤드 부분 인클루드 -->
     <jsp:include page="include/head.jsp"></jsp:include>
+    <script src="${path1 }/resource/css/styles.js"></script>
 </head>
 <body>
 <header id="header">
 	<!-- 헤더 부분 인클루드 -->
 	<jsp:include page="include/header.jsp"></jsp:include>
 </header>
-
-<h1>
-	Hello world!  
-</h1>
-
-<P>  The time on the server is ${serverTime}. </P>
-
+<div class="container">
+	<section class="section">
+		<div id="visual_content" class="mainVisual">
+	       <div class="catch">
+	
+	<p>국민이 안심할 수 있는 <strong>환경</strong>,<br><strong>탄소중립</strong>으로 도약하는 대한민국</p>
+	       </div>
+	               
+		</div>
+		
+		<div class="row">
+		    <div class="col">
+		      <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+				  <div class="carousel-inner">
+				    <div class="carousel-item active">
+				      <img src="${path1}/resources/img/main2.png" class="d-block w-33" alt="이미지">
+				    </div>
+				    <div class="carousel-item">
+				      <img src="${path1}/resources/img/main3.png" class="d-block w-33" alt="이미지">
+				    </div>
+				    <div class="carousel-item">
+				      <img src="${path1}/resources/img/main4.jpg" class="d-block w-33" alt="이미지">
+				    </div>
+				  </div>
+			</div>
+		   </div>
+		   <div class="col">
+		      
+		      <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+				  <div class="carousel-inner">
+				    <div class="carousel-item active">
+				      <img src="${path1}/resources/img/main11.jpg" class="d-block w-33" alt="이미지">
+				    </div>
+				    <div class="carousel-item">
+				      <img src="${path1}/resources/img/main12.jpg" class="d-block w-33" alt="이미지">
+				    </div>
+				    <div class="carousel-item">
+				      <img src="${path1}/resources/img/main13.jpg" class="d-block w-33" alt="이미지">
+				    </div>
+				  </div>
+			</div>
+		    </div>
+		    <div class="col">
+		      <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+				  <div class="carousel-inner">
+				    <div class="carousel-item active">
+				      <img src="${path1}/resources/img/main6.jpg" class="d-block w-33" alt="이미지">
+				    </div>
+				    <div class="carousel-item">
+				      <img src="${path1}/resources/img/main7.jpg" class="d-block w-33" alt="이미지">
+				    </div>
+				    <div class="carousel-item">
+				      <img src="${path1}/resources/img/main8.jpg" class="d-block w-33" alt="이미지">
+				    </div>
+				  </div>
+			</div>
+		    </div>
+	  	</div>
+	</section>	  	
+</div>
 <footer id="footer" class="footer-nav row expanded collapse">
 	<!-- 푸터 부분 인클루드 -->
 	<jsp:include page="include/footer.jsp"></jsp:include>

@@ -5,30 +5,20 @@
 <%@ taglib prefix="fn" uri = "http://java.sun.com/jsp/jstl/functions"%>
 <c:set var="path3" value="${pageContext.request.contextPath }" />
 <!-- 푸터 내용 기술 -->
-<article class="ft_wrap">
-	<div class="footer-nav-left">
-	 <p class="menu-text" id="logo2"><img src="${path3 }/data/logo1.png" alt="이미지"></p>
-	  
+<div class="container">
+	<div class="foot_bottom">
+		<div>
+			<div class="foot_logo">
+				<a href="/#"><img src="${path3 }/resources/img/foot_logo.png" alt="환경부"></a>
+			</div>
+			<div>
+				<address>
+					(우)30103 세종특별자치시 도움6로 11 정부세종청사 6동 <span>&nbsp&nbsp|&nbsp&nbsp  민원실 : <a href="tel:1577-8866">1577-8866</a></span>
+				</address>
+				<p>
+					- 본 누리집의 내용은 저작권법에 의해 보호를 받는 저작물로서, 이에 대한 무단 복제 및 배포를 원칙적으로 금하며 누리집에 게재된 이메일 주소의 수집을 거부합니다.<br> 이를 위반 시 관련법에 의해 처벌됨을 알려드립니다.<br>- 누리집 저작권은 환경부에 있습니다.
+				</p>
+			</div>
+		</div>
 	</div>
-	<div class="footer-nav-center">
-		<p> 개인정보처리방침 <br> 연락처: 02-6740-1114 <br> 
-		©2019 ALL RIGHTS RESERVED</p><br>
-
-	</div>
-	<div class="footer-nav-right">
-	  <ul class="footer-nav-menu-icons">
-	    <li class="footer-nav-item">
-	      <a href="get-involved/support.html"><img class="footer-social-icon" src="${path3 }/resources/icon/email-icon.svg" alt=""></a>
-	    </li>
-	    <li class="footer-nav-item">
-	      <a href="https://www.facebook.com/foundation/"><img class="footer-social-icon" src="${path3 }/resources/icon/facebook-icon.svg" alt=""></a>
-	    </li>
-	    <li class="footer-nav-item">
-	      <a href="https://twitter.com/FoundationCSS"><img class="footer-social-icon" src="${path3 }/resources/icon/twitter-icon.svg" alt=""></a>
-	    </li>
-	    <li class="footer-nav-item">
-	      <a href="https://www.youtube.com/channel/UCS7eqSwmBYuslPEKeJBq-kg"><img class="footer-social-icon" src="${path3 }/resources/icon/youtube-icon.svg" alt=""></a>
-	    </li>
-	  </ul>
-	</div>
-</article>
+</div>

@@ -19,8 +19,10 @@
     <!-- 헤더 부분 인클루드 -->
     <jsp:include page="../include/header.jsp"></jsp:include>
 </header>
+<section class="section">
+	<div class="container">
 	<h2> 공지사항 상세보기 </h2>
-		<table>
+		<table class="table" id="tb1">
 			<tbody>
 				<tr>
 		      			<th>글 번호</th>
@@ -49,6 +51,8 @@
 			  <a class="button" href="${path1 }/notice/delete.do?tno=${dto.tno}">삭제</a>
 			  <a class="button" href="${path1 }/notice/edit?tno=${dto.tno}">수정</a>
 			</div>
+	</div>
+</section>
 <footer id="footer" class="footer-nav row expanded collapse">
     <!-- 푸터 부분 인클루드 -->
     <jsp:include page="../include/footer.jsp"></jsp:include>

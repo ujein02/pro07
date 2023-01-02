@@ -7,48 +7,46 @@
 <%@ page import="java.text.*, java.net.InetAddress" %>
 <c:set var="path1" value="${pageContext.request.contextPath }" />
 <!-- 헤더 내용 기술 -->
-<nav class="navbar navbar-expand-lg bg-light">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Navbar</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Company</a>
+<div class="container">
+    <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+      <a href="/" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
+        <svg class="bi me-2" width="40" height="32" role="img" aria-label="환경부"><img src="${path1 }/resources/img/logo.png" alt="logo" /></svg>
+      </a>
+
+      <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+        <li><a href="#" class="nav-link px-3 link-secondary">Home</a></li>
+        <li><a href="#" class="nav-link px-3 link-secondary" >기관소개</a></li>
+        <li class="nav-item dropdown">
+	        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" >알림</a>
+	        <ul class="dropdown-menu" >
+	          <li><a class="dropdown-item" href="${path1 }/notice/list.do">공지사항</a></li>
+	        </ul>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Community
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="${path1 }/notice/list.do">공지사항</a></li>
-            <li><a class="dropdown-item" href="${path1 }/qna/list.do">QnA</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-          </ul>
+	        <a class="nav-link dropdown-toggle" href="#"data-bs-toggle="dropdown"  >국민소통</a>
+	        <ul class="dropdown-menu" >
+	          <li><a class="dropdown-item" href="${path1 }/qna/list.do">QNA</a></li>
+	        </ul>
         </li>
-       </ul>
-    </div>
+        <li><a href="#" class="nav-link px-3 link-secondary">홍보</a></li>
+        
+      </ul>
+
+      <div class="col-md-3 text-end">
+	      <ul class="menu">
+	        <c:if test="${empty sid }">
+		        <a href="${path1 }/member/loginForm.do" class="btn btn-outline-primary me-2">로그인</a>
+		        <a href="${path1 }/member/agree.do" class="btn btn-primary">회원가입</a>
+	        </c:if>
+	        	
+	        <c:if test="${not empty sid }"> 
+	        	<a href="${path1 }/member/logout.do" class="btn btn-outline-primary me-2">로그아웃</a>
+		        <a href="#" class="btn btn-primary">회원정보</a>
+	        </c:if>
+	         <c:if test='${sid eq "admin"}'>
+	         	<a href="" class="btn btn-primary">admin</a>
+	         </c:if>
+	        </ul>
+      </div>
+    </header>
   </div>
-  <div class="top-bar-right">
-       <ul class="menu">
-        <c:if test="${empty sid }">
-          <li><a href="${path1 }/member/loginForm.do">로그인</a></li>
-          <li><a href="${path1 }/member/agree.do">회원가입</a></li>
-        </c:if>
-        <c:if test="${not empty sid }">  
-          <li><a href="${path1 }/member/logout.do">로그아웃</a></li>
-          <li><a href="#">회원정보</a></li>
-        </c:if>  
-        <c:if test='${sid eq "admin"}'>
-          <li><a href="#">관리자 페이지</a></li>
-        </c:if>  
-       </ul>
-     </div>
- 
-</nav>

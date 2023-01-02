@@ -13,16 +13,7 @@
 <title>Qna 목록</title>
     <!-- 헤드 부분 인클루드 -->
     <jsp:include page="../include/head.jsp"></jsp:include>
-    <link rel="stylesheet" href="${path1 }/resource/datatables.min.css">
-	<script src="${path1 }/resource/datatables.min.js"></script>
-	<script>
-	$(document).ready( function () {
-	    $('#tb1').DataTable({
-	    	  aaSorting: []
-	    	  //, order : [[ 0, "asc" ]]
-	   	});
-	});
-	</script>
+
 </head>
 <body>
 <header id="header">
@@ -35,13 +26,17 @@
 		<table class="table" id="tb1">
 			<thead>
 				<tr>
-					<th style="max-width:5px"></th><th>연번</th><th>제목</th><th>작성자</th><th>작성일</th>
+					<th scope="col"></th>
+					<th scope="col">연번</th>
+					<th scope="col">제목</th>
+					<th scope="col">작성자</th>
+					<th scope="col">작성일</th>
 				</tr>
 			</thead>
 			<tbody>
 			<c:forEach items="${qnaList }" var="qna" varStatus="status">
 			<tr>
-				<td><span style="color:transparent">${qna.parno }</span></td>
+				<td scope="row"><span style="color:transparent">${qna.parno }</span></td>
 				<td>
 					<c:if test="${qna.lev==0}">
 						<span>${qna.qno }</span>
@@ -94,16 +89,16 @@
 			</tbody>
 		</table>
 		<!--<c:if test='${not empty sid}'>-->
-		<div class="button-group">
-			<a href="${path1 }/qna/insert" class="button">글 등록</a>
+		<div class="btn-group">
+			<a href="${path1 }/qna/insert" class="btn btn-dark">글 등록</a>
 		</div>
 		<!--</c:if>-->
 		</div>	
 	</section>
-	<script src="${path1 }/include/jquery.js"></script>
-<footer id="footer" class="footer-nav row expanded collapse">
+	
+</body>
+<footer id="footer" >
     <!-- 푸터 부분 인클루드 -->
     <jsp:include page="../include/footer.jsp"></jsp:include>
-</footer>		
-</body>
+</footer>	
 </html>
