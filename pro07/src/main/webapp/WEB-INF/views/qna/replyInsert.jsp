@@ -12,7 +12,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>질문하기</title>
+    <title>답변하기</title>
     <jsp:include page="../include/head.jsp"/>
 	<link rel="stylesheet" href="${path1 }/resource/datatables.min.css">
 	<script src="${path1 }/resource/datatables.min.js"></script>
@@ -21,7 +21,7 @@
   <jsp:include page="../include/header.jsp" />
  <section class="section">
     	<div class="container">
-			<h2 class="title">답변 쓰기</h2>
+			<h2 class="title">답변하기</h2>
 			<form name="frm1" id="frm1" action="${path1 }/qna/reInsert.do" method="post">
 				<table class="table">
 					<tbody>
@@ -31,20 +31,20 @@
 						</tr>
 						<tr>
 							<th><label for="title">답변 제목</label></th>
-							<td><input type="text" name="title" id="title" placeholder="제목 입력" class="input" required></td>
+							<td><input type="text" name="title" id="title" placeholder="제목 입력" class="form-control" required></td>
 						</tr>
 						<tr>
 							<th><label for="content">답변 내용</label></th>
 							<td>
-								<textarea cols="100" rows="6" name="content" id="content" class="textarea"></textarea>
+								<textarea cols="100" rows="6" name="content" id="content" class="form-control"></textarea>
 							</td>
 						</tr>
 						<tr>
 							<th><label for="author">작성자</label></th>
 							<td>
-								<input type="text" name="author" id="author" class="input" value='admin' readonly required>
+								<input type="text" name="author" id="author" class="form-control" value='admin' readonly required>
 								<input type="hidden" name="lev" id="lev" value="1">
-								<input type="hidden" name="parno" id="parno" value="${dto.qno }">
+								<input type="hidden" name="parno" id="parno" value="${dto.parno }">
 							</td>
 						</tr>
 						<tr>
@@ -58,9 +58,13 @@
 						</tr>
 					</tbody>
 				</table>
-				<div class="btn-group">
-					<button type="submit" class="button is-primary">답글 쓰기</button>
-					<a href="${path1 }/qna/list.do" class="button is-info">목록으로</a>
+				<div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+		      		<div class="btn-group me-2" role="group" aria-label="First group">
+				    	<button type="submit" class="btn btn-dark">등록</button>
+				  	</div>
+			      	<div class="btn-group" role="group" aria-label="Second group">
+				    	<a type="button" href="${path1 }/qna/list" class="btn btn-dark">목록</a>
+				  	</div>
 				</div>
 			</form>
 		</div>	

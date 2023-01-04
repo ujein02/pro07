@@ -13,16 +13,7 @@
 <title>Qna 목록</title>
     <!-- 헤드 부분 인클루드 -->
     <jsp:include page="../include/head.jsp"></jsp:include>
-    <link rel="stylesheet" href="${path1 }/resource/datatables.min.css">
-	<script src="${path1 }/resource/datatables.min.js"></script>
-	<script>
-	$(document).ready( function () {
-	    $('#tb1').DataTable({
-	    	  aaSorting: []
-	    	  //, order : [[ 0, "asc" ]]
-	   	});
-	});
-	</script>
+
 </head>
 <body>
 <header id="header">
@@ -32,35 +23,35 @@
 	<section class="section">
     	<div class="container">
 			<h2 class="title">질문 및 답변 상세 내용</h2>
-			<form name="frm1" id="frm1" action="${path1 }/UpdateQnaProCtrl.do" method="post">
-				<input type="hidden" name="no" id="no" value="${vo.no }"/>
+			<form name="frm1" id="frm1" action="${path1 }/qna/edit.do" method="post">
+				<input type="hidden" name="qno" id="qno" value="${dto.qno }"/>
 				<table class="table">
 					<tbody>
 						<tr>
 							<th><label for="title">질문 제목</label></th>
-							<td><input type="text" name="title" id="title" placeholder="제목 입력" maxlength="100" class="input" value="${vo.title }" required></td>
+							<td><input type="text" name="title" id="title" placeholder="제목 입력" maxlength="100" class="form-control" value="${dto.title }" required></td>
 						</tr>
 						<tr>
 							<th><label for="content">질문 내용</label></th>
 							<td>
-								<textarea cols="100" rows="6" name="content" id="content" maxlength="600" class="input">${vo.content }</textarea>
+								<textarea cols="100" rows="6" name="content" id="content" maxlength="600" class="form-control">${dto.content }</textarea>
 							</td>
 						</tr>
 						<tr>
 							<th><label for="author">작성자</label></th>
 							<td>
-								<input type="text" name="author" id="author" class="input" value='${sid }' readonly required>
-								<input type="hidden" name="lev" id="lev" value="${vo.lev }">
+								<input type="text" name="author" id="author" class="form-control" value='${sid }' readonly required>
+								<input type="hidden" name="lev" id="lev" value="${dto.lev }">
 							</td>
 						</tr>
 						<tr>
 							<th><label for="sec1">비밀글 여부</label></th>
 							<td>
 								<p>현재 상태 :
-								<c:if test='${vo.sec.equals("Y") }'>
+								<c:if test='${dto.sec.equals("Y") }'>
 									<strong>비밀글</strong>
 								</c:if>
-								<c:if test='${vo.sec.equals("N") }'>
+								<c:if test='${dto.sec.equals("N") }'>
 									<strong>공개</strong>
 								</c:if>
 								</p>
@@ -72,10 +63,16 @@
 						</tr>
 					</tbody>
 				</table>
-				<div class="btn-group">
-					<input type="submit" value="글 변경" class="button is-info">
-					<a href="${path1 }/GetQnaListCtrl.do" class="button is-primary">목록으로</a>
-					<a href="${path1 }/DeleteQnaCtrl.do?no=${vo.no }" class="button is-danger">글 삭제</a>
+				<div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+		      		<div class="btn-group me-2" role="group" aria-label="First group">
+				    	<button type="submit" class="btn btn-dark">수정</button>
+				  	</div>
+			      	<div class="btn-group me-2" role="group" aria-label="Second group">
+				    	<a type="button" href="${path1 }/qna/list" class="btn btn-dark">목록</a>
+				  	</div>
+				  	<div class="btn-group" role="group" aria-label="Third group">
+				    	<a type="button" href="${path1 }/qna/delete.do?qno=${dto.qno}" class="btn btn-dark">삭제</a>
+				  	</div>
 				</div>
 			</form>
 		</div>	

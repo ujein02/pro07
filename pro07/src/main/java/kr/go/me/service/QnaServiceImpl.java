@@ -35,6 +35,18 @@ public class QnaServiceImpl implements QnaService{
 		qnaDAO.addReply(qna);
 		
 	}
+
+	@Override
+	public void qnaDelete(int qno) throws Exception {
+		qnaDAO.qnaDelete(qno);
+		
+	}
+
+	@Override
+	public void qnaEdit(QnaDTO dto) throws Exception {
+		qnaDAO.qnaEdit(dto);
+		
+	}
 	
 	
 

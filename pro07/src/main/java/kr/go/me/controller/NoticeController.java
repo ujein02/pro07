@@ -21,6 +21,7 @@ public class NoticeController {
 	@Autowired
 	NoticeService noticeService;
 	
+	//목록보기
 	@GetMapping("list")
 	public String noticeList(Model model) throws Exception{
 		List<NoticeDTO> noticeList = noticeService.noticeList();
@@ -28,6 +29,7 @@ public class NoticeController {
 		return "notice/list";
 	}
 	
+	//상세보기
 	@GetMapping("detail")
 	public String getNotice(HttpServletRequest request, Model model) throws Exception{
 		int tno = Integer.parseInt(request.getParameter("tno"));
@@ -36,6 +38,7 @@ public class NoticeController {
 		return "notice/detail";
 	}
 	
+	//등록하기 폼
 	@GetMapping("insert")
 	public String insertNotice(HttpServletRequest request, Model model) throws Exception{
 		return "notice/insert";

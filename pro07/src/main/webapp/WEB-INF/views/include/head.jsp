@@ -40,12 +40,12 @@ padding: 24px; border:3px solid #eee; height:600px; overflow-y:auto; }
 
 .btn-group, .btn-toolbar{float:right;}
 
-.mainVisual{position: relative; display:block; width:100%; height:700px; background-image:url("${path0}/resources/img/main.png"); background-color:white;
+.mainVisual{position: relative; display:block; width:100vw; height:700px; background-image:url("${path0}/resources/img/main.png"); background-color:white;
 background-size:100% auto; background-repeat:no-repeat; background-position:center center; margin:0 auto; }
 
 .mainVisual .catch{
     position: absolute;
-    top: 65px;
+    top: 35vh;
     left: 50%;
     width: 100%;
     margin: 0 auto;
@@ -62,7 +62,7 @@ background-size:100% auto; background-repeat:no-repeat; background-position:cent
 .catch p {    font-family: "Noto Sans KR",sans-serif;
     text-align: left;
     color: #fff;
-    font-size: 60px;
+    font-size: 4vw;
     font-weight: 900;
     line-height: 1.35;
     text-shadow: 3px 3px 2px #555;

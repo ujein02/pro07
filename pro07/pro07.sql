@@ -73,3 +73,7 @@ commit;
 
 insert into me_qna values(qna_mseq.nextval, 'test', '문의합니다 제목1', '문의합니다  내용1', sysdate, 0);
 INSERT INTO qna(title, content, author, lev, parno, sec) VALUES (?,?,?,?,?,?);
+
+
+select * from me_qna order by parno asc, qno asc, lev asc;
+delete from me_qna where qno='3';

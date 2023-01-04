@@ -27,7 +27,6 @@
 			<thead>
 				<tr>
 					<th scope="col"></th>
-					<th scope="col">연번</th>
 					<th scope="col">제목</th>
 					<th scope="col">작성자</th>
 					<th scope="col">작성일</th>
@@ -38,19 +37,14 @@
 			<tr>
 				<td scope="row"><span style="color:transparent">${qna.parno }</span></td>
 				<td>
-					<c:if test="${qna.lev==0}">
-						<span>${qna.qno }</span>
-					</c:if>
-					<c:if test="${qna.lev==1}">
-						<span style="color:white">${qna.qno }</span>
-					</c:if>
-				</td>
-				<td>
 				<c:if test="${qna.lev==0}">
 					<c:if test='${qna.sec.equals("Y")}'>
 						<c:if test='${sid.equals(qna.author) || sid.equals("admin")}'>
 							<a href="${path1 }/qna/detail?qno=${qna.qno }">${qna.title }</a>
 						</c:if>
+						<c:if test='${sid!=qna.author && sid!="admin" && not empty sid }'>
+							<span>${qna.title }</span>
+						</c:if>	
 						<c:if test='${empty sid }'>
 							<span>${qna.title }</span>
 						</c:if>	
@@ -65,17 +59,20 @@
 				<c:if test="${qna.lev==1}">
 					<c:if test='${qna.sec.equals("Y")}'>
 						<c:if test='${sid.equals(qna.author) || sid.equals("admin")}'>
-							<a href="${path1 }/qna/detail?qno=${qna.qno }" style="padding-left:60px;">${qna.title }</a>
+							<a href="${path1 }/qna/detail?qno=${qna.qno }" style="padding-left:30px;">RE:${qna.title }</a>
+						</c:if>
+						<c:if test='${sid!=qna.author && sid!="admin" && not empty sid }'>
+							<span style="padding-left:30px;">RE:${qna.title }</span>				
 						</c:if>
 						<c:if test='${empty sid }'>
-							<span style="padding-left:60px;">${qna.title }</span>				
+							<span style="padding-left:30px;">RE:${qna.title }</span>				
 						</c:if>
 					</c:if>
 					<c:if test='${qna.sec.equals("N") && not empty sid}'>	
-						<a href="${path1 }/qna/detail?qno=${qna.qno }" style="padding-left:60px;">${qna.title }</a>
+						<a href="${path1 }/qna/detail?qno=${qna.qno }" style="padding-left:30px;">RE:${qna.title }</a>
 					</c:if>							
 					<c:if test='${qna.sec.equals("N") && empty sid}'>
-				 		<span style="padding-left:60px;">${qna.title }</span>
+				 		<span style="padding-left:30px;">RE:${qna.title }</span>
 					</c:if>
 				</c:if>
 				</td>

@@ -9,5 +9,6 @@ public interface QnaDAO {
 	public QnaDTO getQna(int qno) throws Exception;
 	public void addQna(QnaDTO qna) throws Exception;
 	public void addReply(QnaDTO qna) throws Exception;
-
+	public void qnaDelete(int qno) throws Exception;
+	public void qnaEdit(QnaDTO dto) throws Exception;
 }

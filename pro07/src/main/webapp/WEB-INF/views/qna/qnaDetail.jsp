@@ -72,28 +72,42 @@
 				</tr>
 			</tbody>
 		</table>
-		<div class="btn-group">
-			<a href="${path1 }/qna/list" class="button is-info">목록</a>
+		<div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+			<div class="btn-group me-2" role="group" aria-label="First group">
+				<a href="${path1 }/qna/list" class="btn btn-dark">목록</a>
+			</div>
 			<c:if test='${sid eq "admin" }'>
 				<c:set var="lev" value="${dto.lev }"/>
 				<c:if test="${dto.lev eq 0 }">
-					<a href="${path1 }/qna/reInsert?qno=${dto.qno }" class="button is-primary">답변 하기</a>
-					<a href="${path1 }/qna/qnaEdit?qno=${dto.qno }" class="button is-info">글 수정</a>
-					<a href="${path1 }/qna/delete.do?parno=${dto.qno }" class="button is-danger">글 삭제</a>
+				<div class="btn-group me-2" role="group" aria-label="Second group">
+					<a href="${path1 }/qna/reInsert?qno=${dto.qno }" class="btn btn-dark">답변 하기</a>
+				</div>
+				<div class="btn-group me-2" role="group" aria-label="Third group">
+					<a href="${path1 }/qna/edit?qno=${dto.qno }" class="btn btn-dark">글 수정</a>
+				</div>
+				<div class="btn-group me-2" role="group" aria-label="4th group">
+					<a href="${path1 }/qna/delete.do?qno=${dto.qno }" class="btn btn-dark">글 삭제</a>
+				</div>
+				
 				</c:if>	
 				<c:if test="${dto.lev eq 1 }">
-					<a href="${path1 }/qna/qnaEditqno=${dto.qno }" class="button is-info">답글 수정</a>
-					<a href="${path1 }/qna/delete.do?qno=${dto.qno }" class="button is-danger">답글 삭제</a>
+				<div class="btn-group me-2" role="group" aria-label="5th group">
+					<a href="${path1 }/qna/edit?qno=${dto.qno }" class="btn btn-dark">답글 수정</a>
+				</div>	
 				</c:if>	
 			</c:if>	
 			<c:if test="${sid eq dto.author }">
-				<a href="${path1 }/qna/qnaEdit?no=${dto.qno }" class="button is-info">글 수정</a>
-				<a href="${path1 }/qna/delete.do?parno=${dto.qno }" class="button is-danger">글 삭제</a>
+			<div class="btn-group me-2" role="group" aria-label="6th group">
+				<a href="${path1 }/qna/edit?qno=${dto.qno }" class="btn btn-dark">글 수정</a>
+			</div>	
+				<a href="${path1 }/qna/delete.do?qno=${dto.qno }" class="btn btn-dark">글 삭제</a><br>
+			
 			</c:if>		
-			<c:if test="${sid ne dto.author}">
-				<p style="clear:both">글 작성자가 아닙니다.</p>
-			</c:if>
+			
 			</div>
+			<c:if test="${sid ne dto.author}">
+				<p style="clear:both; text-align:center;">글 작성자가 아닙니다.</p>
+			</c:if>
 		</div>	
 	</section>
   <jsp:include page="../include/footer.jsp"></jsp:include>
