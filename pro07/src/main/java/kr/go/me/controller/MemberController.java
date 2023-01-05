@@ -22,12 +22,12 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import kr.go.me.dto.MemberDTO;
+import kr.go.me.dto.NoticeDTO;
 import kr.go.me.service.MemberService;
 
 @Controller
 @RequestMapping("/member/*")
 public class MemberController {
-	private static final Logger logger = LoggerFactory.getLogger(MemberController.class);
 		
 		@Autowired
 		MemberService memberService;
@@ -38,12 +38,31 @@ public class MemberController {
 		@Autowired
 		HttpSession session;
 		
+		//회원 목록 보기
 		@RequestMapping(value="list.do", method = RequestMethod.GET)
 		public String memberList(Model model) throws Exception {
 			List<MemberDTO> memberList = memberService.memberList();
 			model.addAttribute("memberList", memberList);
 			return "member/memberList";
 		}
+		
+		//일반 회원 정보 상세보기
+		@GetMapping("detail.do")
+		public String memberRead(Model model, HttpServletRequest request) throws Exception {
+			String id = (String) session.getAttribute("sid");
+			MemberDTO member = memberService.getMember(id);
+			model.addAttribute("member", member);
+			return "member/memberRead";
+		}
+		
+		//관리자 회원 정보 상세보기
+		@GetMapping("getMember.do")
+		public String getMember(@RequestParam String id, Model model) throws Exception {
+			MemberDTO member = memberService.getMember(id);
+			model.addAttribute("member", member);
+			return "member/memberDetail";
+		}
+
 		
 		//회원 가입 - 약관 동의 페이지 로딩
 		@GetMapping("agree.do")
@@ -64,7 +83,7 @@ public class MemberController {
 			MemberDTO dto = new MemberDTO();
 			dto = memberService.getMember(id);
 
-			if(dto!=null){	//이미 있는 아이디임
+			if(dto!=null){	//이미 있는 아이디
 				result = false;
 			} else {
 				result = true;
@@ -112,6 +131,30 @@ public class MemberController {
 		//로그아웃
 		@RequestMapping("logout.do")
 		public String memberLogout(HttpSession session) throws Exception {
+			session.invalidate();
+			return "redirect:/";
+		}
+		
+		//회원정보 수정 폼 로딩
+		@GetMapping("edit.do")  
+		public String memberEditForm(Model model) throws Exception {
+			return "member/memberEdit";
+		}
+		
+		//회원 정보 수정
+		@RequestMapping(value="update.do", method = RequestMethod.POST)
+		public String memberUpdate(MemberDTO mdto, Model model) throws Exception {
+			String pwd = pwdEncoder.encode(mdto.getPw());
+			mdto.setPw(pwd);
+			memberService.memberUpdate(mdto);
+			return "redirect:/";
+		}
+		
+		
+		//회원 탈퇴
+		@RequestMapping(value="delete.do", method = RequestMethod.GET)
+		public String memberDelete(@RequestParam String id, Model model, HttpSession session) throws Exception {
+			memberService.memberDelete(id);
 			session.invalidate();
 			return "redirect:/";
 		}

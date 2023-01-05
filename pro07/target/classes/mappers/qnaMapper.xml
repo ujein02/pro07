@@ -19,7 +19,7 @@
 	</insert>
 	<!-- 답변 등록-->
 	<insert id="replyInsert">
-		insert into me_qna(title, content, author, lev, parno, sec) values(#{title}, #{content}, #{author}, #{lev}, #{parno}, #{sec})
+		insert into me_qna(qno, title, content, author, lev, parno, sec) values((select nvl(max(qno), 0)+1 from me_qna), #{title}, #{content}, #{author}, #{lev}, #{parno}, #{sec})
 	</insert>
 	<!-- 삭제 -->
 	<delete id="qnaDelete">

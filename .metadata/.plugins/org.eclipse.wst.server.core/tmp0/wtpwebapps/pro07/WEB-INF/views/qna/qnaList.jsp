@@ -13,12 +13,19 @@
 <title>Qna 목록</title>
     <!-- 헤드 부분 인클루드 -->
     <jsp:include page="../include/head.jsp"></jsp:include>
-
+	<link rel="stylesheet" href="../include/datatables.min.css">
+	<script src="../include/datatables.min.js"></script>
+	<script>
+	$(document).ready( function () {
+	    $('#tb1').DataTable();
+	} );
+	</script>
 </head>
 <body>
 <header id="header">
     <!-- 헤더 부분 인클루드 -->
     <jsp:include page="../include/header.jsp"></jsp:include>
+   
 </header>
 	<section class="section">
     <div class="container">

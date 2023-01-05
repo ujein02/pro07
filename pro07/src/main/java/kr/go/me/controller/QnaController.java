@@ -19,7 +19,6 @@ import kr.go.me.service.QnaService;
 @Controller
 @RequestMapping("/qna/")
 public class QnaController {
-	private static final Logger log = LoggerFactory.getLogger(QnaController.class);
 	
 	@Autowired
 	QnaService qnaService;
@@ -66,7 +65,6 @@ public class QnaController {
 	public String insertReply(HttpServletRequest request, Model model) throws Exception{
 		int parno = Integer.parseInt(request.getParameter("qno"));
 		QnaDTO dto = qnaService.getQna(parno);
-		log.info("parno : "+parno);
 		model.addAttribute("dto",dto);
 		return "qna/replyInsert";
 	}
@@ -79,9 +77,8 @@ public class QnaController {
 		dto.setAuthor(request.getParameter("author"));
 		dto.setLev(Integer.parseInt(request.getParameter("lev")));
 		dto.setParno(Integer.parseInt(request.getParameter("parno")));
-		log.info("parno : "+Integer.parseInt(request.getParameter("parno")));
 		dto.setSec(request.getParameter("sec"));
-		qnaService.addQna(dto);
+		qnaService.addReply(dto);
 		
 		return "redirect:list";
 	}

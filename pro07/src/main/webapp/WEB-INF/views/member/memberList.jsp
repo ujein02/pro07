@@ -3,43 +3,53 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"  %>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <%@ taglib prefix="fn" uri = "http://java.sun.com/jsp/jstl/functions"%>
-<c:set var="path1" value="${pageContext.request.contextPath }"/>
+<c:set var="path1" value="${pageContext.request.contextPath }" />
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
-<link rel="stylesheet" href="${path1 }/include/foundation.css">
-<link rel="stylesheet" href="${path1 }/include/app.css">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<title>회원 목록</title>
+    <!-- 헤드 부분 인클루드 -->
+    <jsp:include page="../include/head.jsp"></jsp:include>
 </head>
 <body>
-<div>
-	<table>
-		<thead>
-		    <tr>
-		      <th width="200">NO</th>
-		      <th>ID</th>
-		      <th width="150">NAME</th>
-		      <th width="150">REGDATE</th>
-		      <th>POINT</th>
-		    </tr>
-	  	</thead>
-		<tbody>
-		<c:forEach items="${memberList }" var="mem" varStatus="status">
-			<tr>
-				<td>${status.count }</td>
-				<td>${mem.user_id }</td>
-				<td>${mem.user_name }</td>
-				<td>${mem.regdate }</td>
-				<td>${mem.pt }</td>
-			</tr>
-		</c:forEach>
-		</tbody>	
-	</table>
-</div>	
-<script src="${path1 }/include/jquery.js"></script>
-<script src="${path1 }/include/what-input.js"></script>
-<script src="${path1 }/include/foundation.js"></script>
-<script src="${path1 }/include/app.js"></script>
+<header id="header">
+    <!-- 헤더 부분 인클루드 -->
+    <jsp:include page="../include/header.jsp"></jsp:include>
+</header>
+<section class="section">
+	<div class="container">
+	<h2 class="title">회원 목록 </h2>
+		<table class="table" id="tb1">
+			<thead>
+				<tr>
+					<th scope="col">No</th>
+					<th scope="col">ID</th>
+					<th scope="col">NAME</th>
+					<th scope="col">REGDATE</th>
+				</tr>
+			</thead>
+			<tbody>
+			<c:forEach items="${memberList }" var="mem" varStatus="status">
+				<tr>
+					<td scope="row">${status.count }</td>
+					<td><a href="${path1 }/member/detail.do?no=${mem.no}">${mem.id }</a></td>
+					<td>${mem.name }</td>
+					<td>
+						<fmt:parseDate value="${mem.regdate }" var="regdate" pattern="yyyy-MM-dd HH:mm:ss" />
+			      		<fmt:formatDate value="${regdate }" pattern="yyyy-MM-dd" />
+		      		</td>
+				</tr>
+			</c:forEach>
+			</tbody>
+		</table>
+	</div>
+</section>
+<footer id="footer" >
+    <!-- 푸터 부분 인클루드 -->
+    <jsp:include page="../include/footer.jsp"></jsp:include>
+</footer>		
 </body>
 </html>

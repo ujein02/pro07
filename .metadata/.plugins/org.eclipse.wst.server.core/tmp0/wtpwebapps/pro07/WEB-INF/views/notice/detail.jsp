@@ -13,6 +13,8 @@
 <title>공지사항 상세보기</title>
     <!-- 헤드 부분 인클루드 -->
     <jsp:include page="../include/head.jsp"></jsp:include>
+    <link rel="stylesheet" href="../include/datatables.min.css">
+	<script src="../include/datatables.min.js"></script>
 </head>
 <body>
 <header>
@@ -21,28 +23,38 @@
 </header>
 <section class="section">
 	<div class="container">
-	<h2> 공지사항 상세보기 </h2>
+	<h2 class="title"> 공지사항 상세보기 </h2>
 		<table class="table" id="tb1">
 			<tbody>
 				<tr>
-		      			<th>글 번호</th>
-		      			<td>${dto.tno }</td>
+		      			<th><label for="tno">글 번호</label></th>
+		      			<td>
+		      				<input type="text" name="tno" id="tno" size="100" class="form-control" value="${dto.tno }" readonly required>
+		      			</td>
 		      		</tr>	
 		      		<tr>
-		      			<th>글 제목</th>
-		      			<td>${dto.title }</td>
+		      			<th><label for="title">글 제목</label></th>
+		      			<td>
+		      				<input type="text" name="title" id="title" size="100" class="form-control" value="${dto.title }" readonly required>
+		      			</td>
 		      		</tr>
 		      		<tr>
 		      			<th>글 내용</th>
-		      			<td><p>${dto.content }</p></td>
+		      			<td>
+		      				<input type="text" name="content" id="content" size="100" class="form-control" value="${dto.content }" readonly required>
+		      			</td>
 		      		</tr>
 		      		<tr>
 		      			<th>작성일시</th>
-		      			<td>${dto.regdate }</td>
+		      			<td>
+		      				<input type="text" name="regdate" id="regdate" size="100" class="form-control" value="${dto.regdate }" readonly required>
+		      			</td>
 		      		</tr>
 		      		<tr>
 		      			<th>읽은 횟수</th>
-		      			<td>${dto.visited }</td>
+		      			<td>
+		      				<input type="text" name="visited" id="visited" size="100" class="form-control" value="${dto.visited }" readonly required>
+		      			</td>
 		      		</tr>
 			</tbody>
 		</table>
@@ -56,6 +68,11 @@
 <footer id="footer" class="footer-nav row expanded collapse">
     <!-- 푸터 부분 인클루드 -->
     <jsp:include page="../include/footer.jsp"></jsp:include>
-</footer>		
+</footer>
+<script>
+	$(document).ready( function () {
+	    $('#tb1').DataTable();
+	} );
+	</script>		
 </body>
 </html>

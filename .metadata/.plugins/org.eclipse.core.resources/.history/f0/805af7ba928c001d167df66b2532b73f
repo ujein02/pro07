@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC 
+"-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="qna">
+	<select id="qnaList" resultType="kr.go.me.dto.QnaDTO">
+		select * from me_qna order by parno asc, qno asc, lev asc
+	</select>
+	<select id="getQna" resultType="kr.go.me.dto.QnaDTO">
+		select * from me_qna where qno=#{qno}
+	</select>
+	<!--  -->
+	<select id="selectUp" resultType="kr.go.me.dto.QnaDTO">
+		select qno from me_qna order by regdate desc limit 1
+	</select>
+	<!-- 글등록-->
+	<insert id="qnaInsert">
+		insert into me_qna(qno, title, content, author, regdate, lev, parno, sec) values(qna_mseq.nextval, #{title}, #{content}, #{author}, sysdate, #{lev}, qna_mseq.currval, #{sec})
+	</insert>
+	<!-- 답변 등록-->
+	<insert id="replyInsert">
+		insert into me_qna(title, content, author, lev, parno, sec) values(#{title}, #{content}, #{author}, #{lev}, #{parno}, #{sec})
+	</insert>
+	<!-- 삭제 -->
+	<delete id="qnaDelete">
+		delete from me_qna where qno=#{qno}
+	</delete>
+	<!-- 수정 -->
+	<update id="qnaEdit">
+		update me_qna set title=#{title}, content=#{content}, author=#{author}, sec=#{sec}, lev=#{lev} where qno=#{qno}
+	</update>
+	<!-- 조회수 -->
+	<update id="countUp">
+		update me_qna set visited=visited+1 where qno=#{qno}
+	</update>
+	<!--  -->
+	<update id="insertUpdate">
+		update me_qna set parno=qno where lev=0 AND qno=#{qno}
+	</update>
+</mapper>
