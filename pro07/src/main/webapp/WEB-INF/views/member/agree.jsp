@@ -17,6 +17,7 @@
 .title { padding-top:36px; padding-bottom:20px; }
 .agree_fr { width: 900px; white-space:pre-wrap; margin: 10px auto; 
 padding: 24px; border:2px solid #eee; height:600px; overflow-y:auto; }
+.section{padding-bottom:200px;}
 </style>
 </head>
 <body>

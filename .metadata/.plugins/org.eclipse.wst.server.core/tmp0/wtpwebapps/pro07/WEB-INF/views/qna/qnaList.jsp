@@ -34,6 +34,7 @@
 			<thead>
 				<tr>
 					<th scope="col"></th>
+					<th scope="col">NO</th>
 					<th scope="col">제목</th>
 					<th scope="col">작성자</th>
 					<th scope="col">작성일</th>
@@ -42,7 +43,15 @@
 			<tbody>
 			<c:forEach items="${qnaList }" var="qna" varStatus="status">
 			<tr>
-				<td scope="row"><span style="color:transparent">${qna.parno }</span></td>
+				<td scope="row"><input type="hidden" name="parno" id="parno" value="${qna.parno }"></td>
+				<td>
+					<c:if test="${qna.lev==0}">
+						<span>${qna.qno }</span>
+					</c:if>
+					<c:if test="${qna.lev==1}">
+						<input type="hidden" name="parno" id="parno" value="${qna.qno }">
+					</c:if>
+				</td>
 				<td>
 				<c:if test="${qna.lev==0}">
 					<c:if test='${qna.sec.equals("Y")}'>
@@ -66,7 +75,7 @@
 				<c:if test="${qna.lev==1}">
 					<c:if test='${qna.sec.equals("Y")}'>
 						<c:if test='${sid.equals(qna.author) || sid.equals("admin")}'>
-							<a href="${path1 }/qna/detail?qno=${qna.qno }" style="padding-left:30px;">RE:${qna.title }</a>
+							<a href="${path1 }/qna/detail?qno=${qna.qno }" style="padding-left:30px;"> &gt;&nbsp;&nbsp; RE: ${qna.title }</a>
 						</c:if>
 						<c:if test='${sid!=qna.author && sid!="admin" && not empty sid }'>
 							<span style="padding-left:30px;">RE:${qna.title }</span>				
@@ -76,7 +85,7 @@
 						</c:if>
 					</c:if>
 					<c:if test='${qna.sec.equals("N") && not empty sid}'>	
-						<a href="${path1 }/qna/detail?qno=${qna.qno }" style="padding-left:30px;">RE:${qna.title }</a>
+						<a href="${path1 }/qna/detail?qno=${qna.qno }" style="padding-left:30px; ">&gt;&nbsp;&nbsp;RE: ${qna.title }</a>
 					</c:if>							
 					<c:if test='${qna.sec.equals("N") && empty sid}'>
 				 		<span style="padding-left:30px;">RE:${qna.title }</span>

@@ -41,37 +41,34 @@
 							</tr>				
 							<tr>
 								<th><label for="pw">비밀번호</label></th>
-								<td><input type="password" name="pw" id="pw"  class="form-control" value="${member.pw }"  required>
+								<td><input type="password" name="pw" id="pw"  class="form-control" value="${member.pw }" readonly  required>
 									<!-- pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" <p>(최소 8자리에서 최대 16자리까지, 숫자, 영문 대소문자, 특수문자가 각 1 문자 이상 포함되어야 함)</p> -->
 								</td>
 							</tr>
 							<tr>
 								<th><label for="pw2">비밀번호 확인</label></th>
-								<td><input type="password" name="pw2" id="pw2"  class="form-control" value="${member.pw }" required></td>
+								<td><input type="password" name="pw2" id="pw2"  class="form-control" value="${member.pw }"readonly  required></td>
 							</tr>
 							<tr>
 								<th><label for="name">이름</label></th>
-								<td><input type="text" name="name" id="name" class="form-control"  value="${member.name }" required></td>
+								<td><input type="text" name="name" id="name" class="form-control"  value="${member.name }"readonly  required></td>
 							</tr>
 							<tr>
 								<th><label for="email">이메일</label></th>
-								<td><input type="email" name="email" id="email"  class="form-control" value="${member.email }" required></td>
+								<td><input type="email" name="email" id="email"  class="form-control" value="${member.email }"readonly  required></td>
 							</tr>
 							<tr>
 								<th><label for="tel">전화번호</label></th>
-								<td><input type="tel" name="tel" id="tel"  class="form-control"  value="${member.tel }"  required></td>
+								<td><input type="tel" name="tel" id="tel"  class="form-control"  value="${member.tel }" readonly  required></td>
 							</tr>
 							<tr>
 								<th><label for="" onclick="findAddr()">주소</label></th>
 								<td>
-									<input type="text" name="addr1" id="addr1" class="form-control" value="${member.addr1 }"><br>
-									<input type="text" name="addr2" id="addr2"  class="form-control" value="${member.addr2 }"><br>
+									<input type="text" name="addr1" id="addr1" class="form-control" value="${member.addr1 }" readonly ><br>
+									<input type="text" name="addr2" id="addr2"  class="form-control" value="${member.addr2 }" readonly ><br>
 									<div class="row g-3">
 				      					<div class="col-auto">
-				      						<input type="text" name="postcode" id="postcode" class="form-control" value="${member.postcode }">
-				      					</div>
-				      					<div class="col-auto">
-										    <input type="button" id="isAddrBtn" class="btn btn-primary" value="우편번호" onclick="findAddr()">
+				      						<input type="text" name="postcode" id="postcode" class="form-control" value="${member.postcode }"readonly >
 				      					</div>
 				      				</div>
 				      			</td>
@@ -86,10 +83,7 @@
 						    	<button type="reset" class="btn btn-dark">취소</button>
 						    </div>
 						    <div class="btn-group me-2" role="group" aria-label="Third group">
-						    	<c:if test="${sid=='admin' }">
-									<a href="${path1 }/member/delete.do?id=${member.id }" class="btn btn-dark">직권 강퇴</a>
-									</c:if>
-									<c:if test="${sid!='admin' }">
+						    		<c:if test="${sid!='admin' }">
 									<a href="${path1 }/member/delete.do?id=${sid }" class="btn btn-dark">회원 탈퇴</a>
 									</c:if>
 							</div>

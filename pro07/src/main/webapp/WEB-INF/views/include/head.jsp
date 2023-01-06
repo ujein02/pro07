@@ -30,13 +30,15 @@ background-size:90% auto; background-repeat:no-repeat; background-position:cente
 
 #header{font-size:18px;}
 #table th { border-bottom:1px solid #fff; }
+.table{ border-spacing: 1px; border-color:#eee; text-align: center;margin-bottom: 5rem}
 
-.title { text-align: center;padding-top:36px; padding-bottom:20px; }
+.title { text-align: center;padding-top:36px; padding-bottom:70px; }
 .agree_fr { width: 1000px; white-space:pre-wrap; margin: 10px auto; 
 padding: 24px; border:3px solid #eee; height:600px; overflow-y:auto; }
-.form-check{margin-left:55px; padding-top:20px;}
+.form-check{margin-left:200px; padding-top:20px;}
 .form-label{width:100px;}
 .section{height:auto; min-height:100%; padding-bottom:181px; margin-bottom: 40px;}
+td a{color:#333;}
 
 .btn-group, .btn-toolbar{float:right;}
 

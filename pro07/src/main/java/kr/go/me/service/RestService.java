@@ -44,4 +44,10 @@ public class RestService {
 		restDAO.addSample(sample);
 		
 	}
+	public void updateSample(SampleDTO sample) throws Exception {
+		restDAO.updateSample(sample);
+	}
+	public void deleteSample(String id) throws Exception {
+		restDAO.deleteSample(id);
+	}
 }

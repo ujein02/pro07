@@ -67,8 +67,15 @@
 								<td>
 									<input type="text" name="addr1" id="addr1" class="form-control" value="${member.addr1 }"><br>
 									<input type="text" name="addr2" id="addr2"  class="form-control" value="${member.addr2 }"><br>
-									<input type="text" name="postcode" id="postcode"  class="form-control" value="${member.postcode }">
-									<input type="button" value="주소찾기" onclick="findAddr()" class="btn btn-primary">
+									<div class="row g-3">
+				      					<div class="col-auto">
+				      						<input type="text" name="postcode" id="postcode" class="form-control" value="${member.postcode }" maxlength="9" required>
+				      					</div>
+				      					<div class="col-auto">
+										    <input type="button" id="isAddrBtn" class="btn btn-primary" value="우편번호" onclick="findAddr()">
+				      						<input type="hidden" name="addrck" id="addrck" value="no"/>
+										</div>
+				      				</div>
 								</td>
 							</tr>
 						</tbody>

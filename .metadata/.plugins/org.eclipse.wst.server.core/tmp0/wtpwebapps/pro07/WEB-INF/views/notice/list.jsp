@@ -35,7 +35,14 @@
 			<c:forEach items="${noticeList }" var="notice" varStatus="status">
 				<tr>
 					<td scope="row">${status.count }</td>
-					<td><a href="${path1 }/notice/detail?tno=${notice.tno}">${notice.title }</a></td>
+					<td>
+					<c:if test='${not empty sid}'>	
+						<a href="${path1 }/notice/detail?tno=${notice.tno}">${notice.title }</a>
+					</c:if>
+					<c:if test='${empty sid}'>
+						<span>${notice.title }</span>
+					</c:if>	
+					</td>
 					<td>
 						<fmt:parseDate value="${notice.regdate }" var="regdate" pattern="yyyy-MM-dd HH:mm:ss" />
 			      		<fmt:formatDate value="${regdate }" pattern="yyyy-MM-dd" />
@@ -45,9 +52,11 @@
 			</c:forEach>
 			</tbody>
 		</table>
+		<c:if test="${sid=='admin' }">
 		<div class="btn-group">
 			  <a class="btn btn-dark" href="${path1 }/notice/insert">글쓰기</a>
 		</div>
+		</c:if>
 	</div>
 </section>
 <footer id="footer" >

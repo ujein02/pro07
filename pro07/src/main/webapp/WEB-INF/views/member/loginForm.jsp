@@ -12,9 +12,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>로그인</title>
 	<style>
-	.content {height: 100vh;}
-	.table_form {width: 80%; margin: 0 auto;}
-	.h1 {margin-top: 100px;}
+	.table {width: 80vw; margin: 0 auto;}
+	.form-control {width:50%;}
 	</style>
 	<!-- 헤드 부분 인클루드 -->
     <jsp:include page="../include/head.jsp"></jsp:include>
@@ -24,12 +23,10 @@
 		<!-- 헤더 부분 인클루드 -->
 	 	<jsp:include page="../include/header.jsp"></jsp:include>
     </header>
-	
-	<div class="content" id="con">
-	    <div class="row column text-center">
-	      <h2 class="h1" style="margin-top: 25vh;">로그인</h2>
+		<div class="row column text-center">
+	      <h2 class="title">로그인</h2>
 	      
-	      <div class="container">
+	      <div class="container" style="width:80%;">
 	      	<section class="section">
 				<c:if test="${!empty msg }">
 				<script>
@@ -71,7 +68,6 @@
 			</section>
 	      </div>
 	    </div>
-	</div>
 </body>
 <footer id="footer" class="footer-nav row expanded collapse">
    	<!-- 푸터 부분 인클루드 -->

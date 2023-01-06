@@ -42,7 +42,30 @@
 		<beans:constructor-arg value="D:\kje\pro07\pro07\src\main\webapp\resources\upload"></beans:constructor-arg>
 	</beans:bean>
 	
+	<!-- 기본 메인 패키지 및 컨트롤러 패키지 설정 -->
 	<context:component-scan base-package="kr.go.me" />
+	
+	<!-- 인터셉터 : 글쓰기와 같은 회원권한을 가진 경우는 반드시 로그인 페이지를 거쳐서 시도할 것  -->
+	<beans:bean id="sampleInterceptor" class="kr.go.me.util.SampleInterceptor" />
+	<beans:bean id="loginInterceptor" class="kr.go.me.util.LoginCheckInterceptor" />
+	<beans:bean id="adminInterceptor" class="kr.go.me.util.AdminInterceptor" />
+	<interceptors>
+		<interceptor>
+            <mapping path="/qna/**" />
+            <beans:ref bean="sampleInterceptor" />
+        </interceptor>
+        <interceptor>
+            <mapping path="/qna/insert" />
+            <mapping path="/qna/edit" />
+            <mapping path="/qna/delete.do" />
+            <beans:ref bean="loginInterceptor"/>
+        </interceptor>
+        <interceptor>
+            <mapping path="/notice/insert"/>
+            <mapping path="/notice/edit"/>
+            <beans:ref bean="adminInterceptor" />
+        </interceptor>
+	</interceptors>
 	
 	
 	

@@ -9,3 +9,8 @@
 1월 04, 2023 18:04:04.81 [12344:2572:0104/180404.817:ERROR:interface_endpoint_client.cc(694)] Message 1 rejected by interface blink.mojom.WidgetHost
 1월 04, 2023 18:10:59.10 [12344:10716:0104/181059.108:ERROR:indexed_db_factory_impl.cc(591)] Failed to GetDBSizeFromEnv: IO error: /000509.log: File not found
 1월 04, 2023 18:30:17.26 [12344:2572:0104/183017.264:ERROR:interface_endpoint_client.cc(694)] Message 1 rejected by interface blink.mojom.WidgetHost
+
+1월 06, 2023 09:13:59.90 NEW SESSION
+1월 06, 2023 09:13:59.90 [9752:10136:0106/091359.906:ERROR:device_event_log_impl.cc(215)] [09:13:59.906] Bluetooth: bluetooth_adapter_winrt.cc:1074 Getting Default Adapter failed.
+1월 06, 2023 12:25:02.42 [9752:10136:0106/122502.427:ERROR:interface_endpoint_client.cc(694)] Message 1 rejected by interface blink.mojom.WidgetHost
+1월 06, 2023 12:35:47.44 [9752:10136:0106/123547.441:ERROR:CONSOLE(1)] "Request Storage.getStorageKeyForFrame failed. {"code":-32602,"message":"Frame tree node for given frame not found"}", source: devtools://devtools/bundled/devtools-frontend/front_end/core/protocol_client/protocol_client.js (1)

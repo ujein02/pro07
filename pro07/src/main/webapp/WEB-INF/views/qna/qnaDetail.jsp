@@ -25,7 +25,7 @@
 		<table class="table">
 			<tbody>
 				<tr>
-					<th>구분</th>
+					<th style="background-color:#dcdcdc">구분</th>
 					<td>
 					<c:if test="${dto.lev eq 0}">
 						<span>질문</span>
@@ -36,7 +36,7 @@
 					</td>
 				</tr>
 				<tr>
-					<th>공개여부</th>
+					<th style="background-color:#dcdcdc">공개여부</th>
 					<td>
 					<c:if test='${dto.sec eq "Y" }'>
 						<span>비공개</span>
@@ -47,27 +47,27 @@
 					</td>
 				</tr>
 				<tr>
-					<th>번호</th>
+					<th style="background-color:#dcdcdc">번호</th>
 					<td>${dto.qno }</td>
 				</tr>
 				<tr>
-					<th>제목</th>
+					<th style="background-color:#dcdcdc">제목</th>
 					<td>${dto.title }</td>
 				</tr>
 				<tr>
-					<th>내용</th>
+					<th style="background-color:#dcdcdc">내용</th>
 					<td>${dto.content }</td>
 				</tr>
 				<tr>
-					<th>작성자</th>
+					<th style="background-color:#dcdcdc">작성자</th>
 					<td>${dto.author }</td>
 				</tr>
 				<tr>
-					<th>작성일시</th>
+					<th style="background-color:#dcdcdc">작성일시</th>
 					<td>${dto.regdate }</td>
 				</tr>
 				<tr>
-					<th>읽은 횟수</th>
+					<th style="background-color:#dcdcdc">읽은 횟수</th>
 					<td>${dto.hit }</td>
 				</tr>
 			</tbody>

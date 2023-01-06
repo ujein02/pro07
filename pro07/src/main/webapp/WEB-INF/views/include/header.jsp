@@ -41,7 +41,7 @@
 	        	
 	        <c:if test="${not empty sid }"> 
 	        	<a href="${path1 }/member/logout.do" class="btn btn-outline-primary me-2">로그아웃</a>
-		        <a href="${path1 }/member/detail.do" class="btn btn-primary">회원정보</a>
+		        <a href="${path1 }/member/detail.do" class="btn btn-primary me-2">회원정보</a>
 	        </c:if>
 	         <c:if test='${sid eq "admin"}'>
 	         	<a href="${path1 }/member/list.do" class="btn btn-primary">admin</a>
