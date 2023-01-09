@@ -15,20 +15,20 @@
 
       <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
         <li><a href="${path1 }/" class="nav-link px-3 link-secondary">Home</a></li>
-        <li><a href="#" class="nav-link px-3 link-secondary" >기관소개</a></li>
+        <li><a href="${path1 }/content/intro" class="nav-link px-3 link-secondary" >기관소개</a></li>
         <li class="nav-item dropdown">
-	        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" >알림</a>
+	        <a class="nav-link dropdown-toggle link-secondary" href="#" role="button" data-bs-toggle="dropdown" >알림</a>
 	        <ul class="dropdown-menu" >
 	          <li><a class="dropdown-item" href="${path1 }/notice/list.do">공지사항</a></li>
 	        </ul>
         </li>
         <li class="nav-item dropdown">
-	        <a class="nav-link dropdown-toggle" href="#"data-bs-toggle="dropdown"  >국민소통</a>
+	        <a class="nav-link dropdown-toggle link-secondary" href="#"data-bs-toggle="dropdown"  >국민소통</a>
 	        <ul class="dropdown-menu" >
 	          <li><a class="dropdown-item" href="${path1 }/qna/list.do">QNA</a></li>
 	        </ul>
         </li>
-        <li><a href="#" class="nav-link px-3 link-secondary">홍보</a></li>
+        <li><a href="${path1 }/content/info" class="nav-link px-3 link-secondary">홍보</a></li>
         
       </ul>
 

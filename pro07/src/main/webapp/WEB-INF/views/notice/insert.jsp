@@ -13,6 +13,9 @@
 <title>공지사항 등록</title>
     <!-- 헤드 부분 인클루드 -->
     <jsp:include page="../include/head.jsp"></jsp:include>
+    <style>
+	.sub_container{background: url("${path1}/resources/img/bg.jpg") repeat; background-size:100%;}
+	</style>
 </head>
 <body>
 <header id="header">
@@ -21,34 +24,70 @@
 </header>
 <section class="section">
 	<div class="container">
-	<h2>공지사항 등록 </h2>
-		<form action="${path1 }/notice/insert.do" method="post">
-		<table class="table" id="table1">
-	      	<tbody>
-	      		<tr>
-	      			<th><label for="exampleFormControlInput1" class="form-label">글 제목</label></th>
-	      			<td>
-	      				<input type="text" name="title" id="title" placeholder="제목 입력" maxlength="98" required class="form-control">
-	      			</td>
-	      		</tr>
-	      		<tr>
-	      			<th ><label for="exampleFormControlTextarea1" class="form-label">글 내용</label></th>
-	      			<td>
-	      				<textarea name="content" id="content" class="form-control" placeholder="내용 입력" rows="8" cols="100" maxlength="800" required></textarea>
-	      			</td>
-	      		</tr>
-
-		      	</tbody>
-		      </table>
-	      	<div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
-	      		<div class="btn-group me-2" role="group" aria-label="First group">
-			    	<button type="submit" class="btn btn-dark">등록</button>
-			  	</div>
-		      	<div class="btn-group" role="group" aria-label="Second group">
-			    	<a type="button" href="${path1 }/notice/list" class="btn btn-dark">목록</a>
-			  	</div>
+	<div class="sub_visual visual01">
+		<!-- start lnb-->
+			<div id="lnb_wrap" class="lnb">
+				<div class="lnb_tit_hidden">
+					<h2 style="color:#fff;">국민소통</h2>
+				</div>
+				<ul>
+					<li class="lnb_dep1"><img alt="" src="${path1}/resources/img/icon_home.png">
+						<a href="/home/web/index.do?menuId=304"><span>환경부</span></a>
+					</li>
+					<li class="lnb_dep1">
+						<a href="/home/web/index.do?menuId=304"><span>기관안내</span></a>
+					</li>
+					<li class="lnb_dep1">
+						<a href="/home/web/index.do?menuId=307"><span>알림</span></a>
+							<ul>
+								<li class="lnb_dep2"><a href="/home/web/index.do?menuId=307">공지사항</a></li>
+							</ul>
+					</li>
+					<li class="lnb_dep1">
+						<a href="/home/web/index.do?menuId=307"><span>국민소통</span></a>
+							<ul>
+								<li class="lnb_dep2 on"><a href="/home/web/index.do?menuId=307">QNA</a></li>
+							</ul>
+					</li>
+					<li class="lnb_dep1">
+						<a href="/home/web/index.do?menuId=304"><span>홍보</span></a>
+					</li>
+				</ul>
 			</div>
-	    </form>
+			<div class="visual_wrap">
+              <h1 class="title" style="color:#fff"> 국민소통 </h1>
+            </div>
+          </div>
+          <div class="sub_container">
+			<h2 class="title">공지사항 등록 </h2>
+				<form action="${path1 }/notice/insert.do" method="post">
+				<table class="table" id="table1">
+			      	<tbody class="tbody">
+			      		<tr>
+			      			<th><label for="exampleFormControlInput1" class="form-label">글 제목</label></th>
+			      			<td>
+			      				<input type="text" name="title" id="title" placeholder="제목 입력" maxlength="98" required class="form-control">
+			      			</td>
+			      		</tr>
+			      		<tr>
+			      			<th ><label for="exampleFormControlTextarea1" class="form-label">글 내용</label></th>
+			      			<td>
+			      				<textarea name="content" id="content" class="form-control" placeholder="내용 입력" rows="8" cols="100" maxlength="800" required></textarea>
+			      			</td>
+			      		</tr>
+		
+				      	</tbody>
+				      </table>
+			      	<div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+			      		<div class="btn-group me-2" role="group" aria-label="First group">
+					    	<button type="submit" class="btn btn-dark">등록</button>
+					  	</div>
+				      	<div class="btn-group" role="group" aria-label="Second group">
+					    	<a type="button" href="${path1 }/notice/list" class="btn btn-dark">목록</a>
+					  	</div>
+					</div>
+			    </form>
+			   </div>
 	</div>
 </section>		
 <footer id="footer">

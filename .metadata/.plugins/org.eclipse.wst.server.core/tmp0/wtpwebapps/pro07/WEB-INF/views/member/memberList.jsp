@@ -13,6 +13,9 @@
 <title>회원 목록</title>
     <!-- 헤드 부분 인클루드 -->
     <jsp:include page="../include/head.jsp"></jsp:include>
+    <style>
+	.sub_container{padding-top:10vh;background: url("${path1}/resources/img/bg.jpg") repeat; background-size:100%;}
+	</style>
 </head>
 <body>
 <header id="header">
@@ -21,30 +24,38 @@
 </header>
 <section class="section">
 	<div class="container">
-	<h2 class="title">회원 목록 </h2>
-		<table class="table" id="tb1">
-			<thead>
-				<tr>
-					<th scope="col">No</th>
-					<th scope="col">ID</th>
-					<th scope="col">NAME</th>
-					<th scope="col">REGDATE</th>
-				</tr>
-			</thead>
-			<tbody>
-			<c:forEach items="${memberList }" var="mem" varStatus="status">
-				<tr>
-					<td scope="row">${status.count }</td>
-					<td><a href="${path1 }/member/detail.do?no=${mem.no}">${mem.id }</a></td>
-					<td>${mem.name }</td>
-					<td>
-						<fmt:parseDate value="${mem.regdate }" var="regdate" pattern="yyyy-MM-dd HH:mm:ss" />
-			      		<fmt:formatDate value="${regdate }" pattern="yyyy-MM-dd" />
-		      		</td>
-				</tr>
-			</c:forEach>
-			</tbody>
-		</table>
+		<div class="sub_visual visual01">
+		<!-- start lnb-->
+			<div class="visual_wrap">
+              <h1 class="title" style="color:#fff">회원 목록 </h1>
+            </div>
+          </div>
+          <div class="sub_container">
+			
+				<table class="table" id="tb1">
+					<thead>
+						<tr>
+							<th scope="col">No</th>
+							<th scope="col">ID</th>
+							<th scope="col">NAME</th>
+							<th scope="col">REGDATE</th>
+						</tr>
+					</thead>
+					<tbody>
+					<c:forEach items="${memberList }" var="mem" varStatus="status">
+						<tr>
+							<td scope="row">${status.count }</td>
+							<td><a href="${path1 }/member/detail.do?no=${mem.no}">${mem.id }</a></td>
+							<td>${mem.name }</td>
+							<td>
+								<fmt:parseDate value="${mem.regdate }" var="regdate" pattern="yyyy-MM-dd HH:mm:ss" />
+					      		<fmt:formatDate value="${regdate }" pattern="yyyy-MM-dd" />
+				      		</td>
+						</tr>
+					</c:forEach>
+					</tbody>
+				</table>
+			</div>
 	</div>
 </section>
 <footer id="footer" >

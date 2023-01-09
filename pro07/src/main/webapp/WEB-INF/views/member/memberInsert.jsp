@@ -13,6 +13,9 @@
 	<title>회원가입</title>
 	<!-- 헤드 부분 인클루드 -->
     <jsp:include page="../include/head.jsp"></jsp:include>
+    <style>
+	.sub_container{background: url("${path1}/resources/img/bg.jpg") repeat; background-size:100%;}
+	</style>
 </head>
 <body>
 	<header id="header">
@@ -21,8 +24,14 @@
     </header>
 	<section class="section">
 		<div class="container" >
+			<div class="sub_visual visual01">
+		<!-- start lnb-->
+			<div class="visual_wrap">
+              <h1 class="title" style="color:#fff"> 회원가입 </h1>
+            </div>
+          </div>
+          <div class="sub_container">
 		    <div class="row column text-center">
-		      <h2 class="h1">회원가입</h2>
 		      <hr>
 		      
 		      	<form name="frm1" id="frm1" action="${path1 }/member/insert.do" method="post" onsubmit="return joinCheck(this)">
@@ -176,6 +185,7 @@
 					<script src="https://t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
 		      
 		    </div>
+		   </div>
 		</div>
 	</section>
     <footer id="footer" class="footer-nav row expanded collapse">

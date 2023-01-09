@@ -14,6 +14,7 @@
 	<style>
 	.table {width: 80vw; margin: 0 auto;}
 	.form-control {width:50%;}
+	.sub_container{padding-top:10vh;background: url("${path1}/resources/img/bg.jpg") repeat; background-size:100%;}
 	</style>
 	<!-- 헤드 부분 인클루드 -->
     <jsp:include page="../include/head.jsp"></jsp:include>
@@ -24,9 +25,14 @@
 	 	<jsp:include page="../include/header.jsp"></jsp:include>
     </header>
 		<div class="row column text-center">
-	      <h2 class="title">로그인</h2>
-	      
 	      <div class="container" style="width:80%;">
+	      	<div class="sub_visual visual01">
+		<!-- start lnb-->
+			<div class="visual_wrap">
+              <h1 class="title" style="color:#fff"> 로그인 </h1>
+            </div>
+          </div>
+          <div class="sub_container">
 	      	<section class="section">
 				<c:if test="${!empty msg }">
 				<script>
@@ -36,7 +42,7 @@
 				</c:if>
 				<form action="${path1 }/member/signin.do" method="post" name="loginForm">
 					<table class="table">
-						<tbody>
+						<tbody class="tbody">
 							<tr>
 								<th><label for="id"><strong>아이디</strong></label></th>
 								<td><input type="text" name="id" id="id" size="100" class="form-control" placeholder="아이디 입력" required>
@@ -66,8 +72,9 @@
 				}
 				</script>
 			</section>
-	      </div>
-	    </div>
+		</div>
+      </div>
+    </div>
 </body>
 <footer id="footer" class="footer-nav row expanded collapse">
    	<!-- 푸터 부분 인클루드 -->
