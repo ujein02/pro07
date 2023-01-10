@@ -32,25 +32,25 @@
 				</div>
 				<ul>
 					<li class="lnb_dep1"><img alt="" src="${path1}/resources/img/icon_home.png">
-						<a href="/home/web/index.do?menuId=304"><span>환경부</span></a>
+						<a href="${path1 }/"><span>환경부</span></a>
 					</li>
 					<li class="lnb_dep1">
-						<a href="/home/web/index.do?menuId=304"><span>기관안내</span></a>
+						<a href="${path1 }/content/intro"><span>기관안내</span></a>
 					</li>
 					<li class="lnb_dep1">
-						<a href="/home/web/index.do?menuId=307"><span>알림</span></a>
+						<a href="#"><span>알림</span></a>
 							<ul>
-								<li class="lnb_dep2"><a href="/home/web/index.do?menuId=307">공지사항</a></li>
+								<li class="lnb_dep2 on"><a href="${path1 }/notice/list">공지사항</a></li>
 							</ul>
 					</li>
 					<li class="lnb_dep1">
-						<a href="/home/web/index.do?menuId=307"><span>국민소통</span></a>
+						<a href="#"><span>국민소통</span></a>
 							<ul>
-								<li class="lnb_dep2 on"><a href="/home/web/index.do?menuId=307">QNA</a></li>
+								<li class="lnb_dep2"><a href="${path1 }/qna/list.do">QNA</a></li>
 							</ul>
 					</li>
 					<li class="lnb_dep1">
-						<a href="/home/web/index.do?menuId=304"><span>홍보</span></a>
+						<a href="${path1 }/content/info"><span>홍보</span></a>
 					</li>
 				</ul>
 			</div>

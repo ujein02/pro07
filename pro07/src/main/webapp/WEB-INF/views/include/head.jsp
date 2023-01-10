@@ -39,12 +39,13 @@ padding: 24px; border:3px solid #eee; height:600px; overflow-y:auto; }
 .form-check{margin-left:200px; padding-top:20px;}
 .form-label{width:100px;}
 .section{height:auto; min-height:100%; padding-bottom:181px; margin-bottom: 40px;}
+
 td a{color:#333;}
 .nav-link dropdown-toggle {color:#333;}
 
 .btn-group, .btn-toolbar{float:right;}
 
-.mainVisual{position: relative; display:block; width:100%; height:100%; background-image:url("${path0}/resources/img/main.png"); background-color:white;
+.mainVisual{position: relative; display:block; width:100%; height:70%; background-image:url("${path0}/resources/img/main.png"); background-color:white;
 background-size:100% 90%; background-repeat:no-repeat; margin:0 auto; }
 
 .mainVisual .catch{

@@ -22,6 +22,8 @@
 	</script>
 	<style>
 	.sub_container{background: url("${path1}/resources/img/bg.jpg") repeat; background-size:100%;}
+	td{text-align:left;}
+	th{width:20%;}
 	</style>
 </head>
 <body>
@@ -86,7 +88,7 @@
 				      			<td>${dto.regdate }</td>
 				      		</tr>
 				      		<tr>
-				      			<th>읽은 횟수</th>
+				      			<th>조회수</th>
 				      			<td>${dto.visited }</td>
 				      		</tr>
 					</tbody>

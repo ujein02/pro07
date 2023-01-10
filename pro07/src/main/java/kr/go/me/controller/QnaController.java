@@ -109,6 +109,8 @@ public class QnaController {
 		dto.setQno(qno);
 		dto.setTitle(request.getParameter("title"));
 		dto.setContent(request.getParameter("content"));
+		dto.setAuthor(request.getParameter("author"));
+		dto.setSec(request.getParameter("sec"));
 		qnaService.qnaEdit(dto);
 		
 		return "redirect:list";
