@@ -10,7 +10,7 @@
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-<title>QNA 목록</title>
+	<title>QNA 목록</title>
     <!-- 헤드 부분 인클루드 -->
     <jsp:include page="../include/head.jsp"></jsp:include>
 	<link rel="stylesheet" href="${path1 }/resources/css/datatables.min.css">
@@ -120,7 +120,7 @@
 							</c:if>
 						</c:if>
 						<c:if test='${qna.sec.equals("N") && not empty sid}'>	
-							<a href="${path1 }/qna/detail?qno=${qna.qno }" style="padding-left:30px; ">&gt;&nbsp;&nbsp;RE: ${qna.title }</a>
+							<a href="${path1 }/qna/detail?qno=${qna.qno }" style="padding-left:30px; "> &gt;&nbsp;&nbsp; RE: ${qna.title }</a>
 						</c:if>							
 						<c:if test='${qna.sec.equals("N") && empty sid}'>
 					 		<span style="padding-left:30px;">RE:${qna.title }</span>

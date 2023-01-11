@@ -1,0 +1,516 @@
+src/main/java/kr/go/me/controller/ContentController.java:10:	AtLeastOneConstructor:	AtLeastOneConstructor: Each class should declare at least one constructor
+src/main/java/kr/go/me/controller/ContentController.java:10:	CommentRequired:	CommentRequired: Class comments are required
+src/main/java/kr/go/me/controller/ContentController.java:14:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/kr/go/me/controller/ContentController.java:14:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'model' is not assigned and could be declared final
+src/main/java/kr/go/me/controller/ContentController.java:14:	SignatureDeclareThrowsException:	SignatureDeclareThrowsException: A method/constructor should not explicitly throw java.lang.Exception
+src/main/java/kr/go/me/controller/ContentController.java:20:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/kr/go/me/controller/ContentController.java:20:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'model' is not assigned and could be declared final
+src/main/java/kr/go/me/controller/ContentController.java:20:	SignatureDeclareThrowsException:	SignatureDeclareThrowsException: A method/constructor should not explicitly throw java.lang.Exception
+src/main/java/kr/go/me/controller/MemberController.java:12:	UnnecessaryImport:	UnnecessaryImport: Unused import 'org.slf4j.Logger'
+src/main/java/kr/go/me/controller/MemberController.java:12:	UnusedImports:	UnusedImports: Unused import 'org.slf4j.Logger'
+src/main/java/kr/go/me/controller/MemberController.java:13:	UnnecessaryImport:	UnnecessaryImport: Unused import 'org.slf4j.LoggerFactory'
+src/main/java/kr/go/me/controller/MemberController.java:13:	UnusedImports:	UnusedImports: Unused import 'org.slf4j.LoggerFactory'
+src/main/java/kr/go/me/controller/MemberController.java:25:	UnnecessaryImport:	UnnecessaryImport: Unused import 'kr.go.me.dto.NoticeDTO'
+src/main/java/kr/go/me/controller/MemberController.java:25:	UnusedImports:	UnusedImports: Unused import 'kr.go.me.dto.NoticeDTO'
+src/main/java/kr/go/me/controller/MemberController.java:30:	AtLeastOneConstructor:	AtLeastOneConstructor: Each class should declare at least one constructor
+src/main/java/kr/go/me/controller/MemberController.java:30:	CommentRequired:	CommentRequired: Class comments are required
+src/main/java/kr/go/me/controller/MemberController.java:30:	TooManyMethods:	TooManyMethods: This class has too many methods, consider refactoring it.
+src/main/java/kr/go/me/controller/MemberController.java:32:	DefaultPackage:	DefaultPackage: Use explicit scoping instead of the default package private level
+src/main/java/kr/go/me/controller/MemberController.java:33:	CommentDefaultAccessModifier:	CommentDefaultAccessModifier: To avoid mistakes add a comment at the beginning of the memberService field if you want a default access modifier
+src/main/java/kr/go/me/controller/MemberController.java:33:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/kr/go/me/controller/MemberController.java:35:	DefaultPackage:	DefaultPackage: Use explicit scoping instead of the default package private level
+src/main/java/kr/go/me/controller/MemberController.java:36:	CommentDefaultAccessModifier:	CommentDefaultAccessModifier: To avoid mistakes add a comment at the beginning of the pwdEncoder field if you want a default access modifier
+src/main/java/kr/go/me/controller/MemberController.java:36:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/kr/go/me/controller/MemberController.java:38:	DefaultPackage:	DefaultPackage: Use explicit scoping instead of the default package private level
+src/main/java/kr/go/me/controller/MemberController.java:39:	CommentDefaultAccessModifier:	CommentDefaultAccessModifier: To avoid mistakes add a comment at the beginning of the session field if you want a default access modifier
+src/main/java/kr/go/me/controller/MemberController.java:39:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/kr/go/me/controller/MemberController.java:43:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/kr/go/me/controller/MemberController.java:43:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'model' is not assigned and could be declared final
+src/main/java/kr/go/me/controller/MemberController.java:43:	SignatureDeclareThrowsException:	SignatureDeclareThrowsException: A method/constructor should not explicitly throw java.lang.Exception
+src/main/java/kr/go/me/controller/MemberController.java:44:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'memberList' could be declared final
+src/main/java/kr/go/me/controller/MemberController.java:51:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/kr/go/me/controller/MemberController.java:51:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'model' is not assigned and could be declared final
+src/main/java/kr/go/me/controller/MemberController.java:51:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'request' is not assigned and could be declared final
+src/main/java/kr/go/me/controller/MemberController.java:51:	SignatureDeclareThrowsException:	SignatureDeclareThrowsException: A method/constructor should not explicitly throw java.lang.Exception
+src/main/java/kr/go/me/controller/MemberController.java:52:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'id' could be declared final
+src/main/java/kr/go/me/controller/MemberController.java:52:	ShortVariable:	ShortVariable: Avoid variables with short names like id
+src/main/java/kr/go/me/controller/MemberController.java:53:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'member' could be declared final
+src/main/java/kr/go/me/controller/MemberController.java:60:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/kr/go/me/controller/MemberController.java:60:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'id' is not assigned and could be declared final
+src/main/java/kr/go/me/controller/MemberController.java:60:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'model' is not assigned and could be declared final
+src/main/java/kr/go/me/controller/MemberController.java:60:	ShortVariable:	ShortVariable: Avoid variables with short names like id
+src/main/java/kr/go/me/controller/MemberController.java:60:	SignatureDeclareThrowsException:	SignatureDeclareThrowsException: A method/constructor should not explicitly throw java.lang.Exception
+src/main/java/kr/go/me/controller/MemberController.java:61:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'member' could be declared final
+src/main/java/kr/go/me/controller/MemberController.java:69:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/kr/go/me/controller/MemberController.java:69:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'model' is not assigned and could be declared final
+src/main/java/kr/go/me/controller/MemberController.java:69:	SignatureDeclareThrowsException:	SignatureDeclareThrowsException: A method/constructor should not explicitly throw java.lang.Exception
+src/main/java/kr/go/me/controller/MemberController.java:74:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/kr/go/me/controller/MemberController.java:74:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'model' is not assigned and could be declared final
+src/main/java/kr/go/me/controller/MemberController.java:74:	SignatureDeclareThrowsException:	SignatureDeclareThrowsException: A method/constructor should not explicitly throw java.lang.Exception
+src/main/java/kr/go/me/controller/MemberController.java:80:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/kr/go/me/controller/MemberController.java:80:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'model' is not assigned and could be declared final
+src/main/java/kr/go/me/controller/MemberController.java:80:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'request' is not assigned and could be declared final
+src/main/java/kr/go/me/controller/MemberController.java:80:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'response' is not assigned and could be declared final
+src/main/java/kr/go/me/controller/MemberController.java:80:	SignatureDeclareThrowsException:	SignatureDeclareThrowsException: A method/constructor should not explicitly throw java.lang.Exception
+src/main/java/kr/go/me/controller/MemberController.java:81:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'id' could be declared final
+src/main/java/kr/go/me/controller/MemberController.java:81:	ShortVariable:	ShortVariable: Avoid variables with short names like id
+src/main/java/kr/go/me/controller/MemberController.java:82:	DataflowAnomalyAnalysis:	DataflowAnomalyAnalysis: Found 'DD'-anomaly for variable 'result' (lines '82'-'87').
+src/main/java/kr/go/me/controller/MemberController.java:82:	DataflowAnomalyAnalysis:	DataflowAnomalyAnalysis: Found 'DD'-anomaly for variable 'result' (lines '82'-'89').
+src/main/java/kr/go/me/controller/MemberController.java:82:	UnusedAssignment:	UnusedAssignment: The initializer for variable 'result' is never used (overwritten on lines 87 and 89)
+src/main/java/kr/go/me/controller/MemberController.java:83:	DataflowAnomalyAnalysis:	DataflowAnomalyAnalysis: Found 'DD'-anomaly for variable 'dto' (lines '83'-'84').
+src/main/java/kr/go/me/controller/MemberController.java:83:	UnusedAssignment:	UnusedAssignment: The initializer for variable 'dto' is never used (overwritten on line 84)
+src/main/java/kr/go/me/controller/MemberController.java:91:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'json' could be declared final
+src/main/java/kr/go/me/controller/MemberController.java:93:	CloseResource:	CloseResource: Ensure that resources like this PrintWriter object are closed after use
+src/main/java/kr/go/me/controller/MemberController.java:93:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'out' could be declared final
+src/main/java/kr/go/me/controller/MemberController.java:94:	LawOfDemeter:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/main/java/kr/go/me/controller/MemberController.java:99:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/kr/go/me/controller/MemberController.java:99:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'member' is not assigned and could be declared final
+src/main/java/kr/go/me/controller/MemberController.java:99:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'model' is not assigned and could be declared final
+src/main/java/kr/go/me/controller/MemberController.java:99:	SignatureDeclareThrowsException:	SignatureDeclareThrowsException: A method/constructor should not explicitly throw java.lang.Exception
+src/main/java/kr/go/me/controller/MemberController.java:100:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'pw' could be declared final
+src/main/java/kr/go/me/controller/MemberController.java:100:	ShortVariable:	ShortVariable: Avoid variables with short names like pw
+src/main/java/kr/go/me/controller/MemberController.java:101:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'pwd' could be declared final
+src/main/java/kr/go/me/controller/MemberController.java:104:	AvoidDuplicateLiterals:	AvoidDuplicateLiterals: The String literal "redirect:/" appears 5 times in this file; the first occurrence is on line 104
+src/main/java/kr/go/me/controller/MemberController.java:109:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/kr/go/me/controller/MemberController.java:109:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'model' is not assigned and could be declared final
+src/main/java/kr/go/me/controller/MemberController.java:109:	SignatureDeclareThrowsException:	SignatureDeclareThrowsException: A method/constructor should not explicitly throw java.lang.Exception
+src/main/java/kr/go/me/controller/MemberController.java:115:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/kr/go/me/controller/MemberController.java:115:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'id' is not assigned and could be declared final
+src/main/java/kr/go/me/controller/MemberController.java:115:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'pw' is not assigned and could be declared final
+src/main/java/kr/go/me/controller/MemberController.java:115:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'req' is not assigned and could be declared final
+src/main/java/kr/go/me/controller/MemberController.java:115:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'rttr' is not assigned and could be declared final
+src/main/java/kr/go/me/controller/MemberController.java:115:	ShortVariable:	ShortVariable: Avoid variables with short names like id
+src/main/java/kr/go/me/controller/MemberController.java:115:	ShortVariable:	ShortVariable: Avoid variables with short names like pw
+src/main/java/kr/go/me/controller/MemberController.java:115:	SignatureDeclareThrowsException:	SignatureDeclareThrowsException: A method/constructor should not explicitly throw java.lang.Exception
+src/main/java/kr/go/me/controller/MemberController.java:117:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'mdto' could be declared final
+src/main/java/kr/go/me/controller/MemberController.java:120:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'login' could be declared final
+src/main/java/kr/go/me/controller/MemberController.java:121:	LawOfDemeter:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/main/java/kr/go/me/controller/MemberController.java:121:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'loginSuccess' could be declared final
+src/main/java/kr/go/me/controller/MemberController.java:125:	OnlyOneReturn:	OnlyOneReturn: A method should have only one exit point, and that should be the last statement in the method
+src/main/java/kr/go/me/controller/MemberController.java:133:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/kr/go/me/controller/MemberController.java:133:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'session' is not assigned and could be declared final
+src/main/java/kr/go/me/controller/MemberController.java:133:	SignatureDeclareThrowsException:	SignatureDeclareThrowsException: A method/constructor should not explicitly throw java.lang.Exception
+src/main/java/kr/go/me/controller/MemberController.java:140:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/kr/go/me/controller/MemberController.java:140:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'model' is not assigned and could be declared final
+src/main/java/kr/go/me/controller/MemberController.java:140:	SignatureDeclareThrowsException:	SignatureDeclareThrowsException: A method/constructor should not explicitly throw java.lang.Exception
+src/main/java/kr/go/me/controller/MemberController.java:146:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/kr/go/me/controller/MemberController.java:146:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'mdto' is not assigned and could be declared final
+src/main/java/kr/go/me/controller/MemberController.java:146:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'model' is not assigned and could be declared final
+src/main/java/kr/go/me/controller/MemberController.java:146:	SignatureDeclareThrowsException:	SignatureDeclareThrowsException: A method/constructor should not explicitly throw java.lang.Exception
+src/main/java/kr/go/me/controller/MemberController.java:147:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'pwd' could be declared final
+src/main/java/kr/go/me/controller/MemberController.java:156:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/kr/go/me/controller/MemberController.java:156:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'id' is not assigned and could be declared final
+src/main/java/kr/go/me/controller/MemberController.java:156:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'model' is not assigned and could be declared final
+src/main/java/kr/go/me/controller/MemberController.java:156:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'session' is not assigned and could be declared final
+src/main/java/kr/go/me/controller/MemberController.java:156:	ShortVariable:	ShortVariable: Avoid variables with short names like id
+src/main/java/kr/go/me/controller/MemberController.java:156:	SignatureDeclareThrowsException:	SignatureDeclareThrowsException: A method/constructor should not explicitly throw java.lang.Exception
+src/main/java/kr/go/me/controller/NoticeController.java:19:	AtLeastOneConstructor:	AtLeastOneConstructor: Each class should declare at least one constructor
+src/main/java/kr/go/me/controller/NoticeController.java:19:	CommentRequired:	CommentRequired: Class comments are required
+src/main/java/kr/go/me/controller/NoticeController.java:21:	DefaultPackage:	DefaultPackage: Use explicit scoping instead of the default package private level
+src/main/java/kr/go/me/controller/NoticeController.java:22:	CommentDefaultAccessModifier:	CommentDefaultAccessModifier: To avoid mistakes add a comment at the beginning of the noticeService field if you want a default access modifier
+src/main/java/kr/go/me/controller/NoticeController.java:22:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/kr/go/me/controller/NoticeController.java:26:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/kr/go/me/controller/NoticeController.java:26:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'model' is not assigned and could be declared final
+src/main/java/kr/go/me/controller/NoticeController.java:26:	SignatureDeclareThrowsException:	SignatureDeclareThrowsException: A method/constructor should not explicitly throw java.lang.Exception
+src/main/java/kr/go/me/controller/NoticeController.java:27:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'noticeList' could be declared final
+src/main/java/kr/go/me/controller/NoticeController.java:34:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/kr/go/me/controller/NoticeController.java:34:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'model' is not assigned and could be declared final
+src/main/java/kr/go/me/controller/NoticeController.java:34:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'request' is not assigned and could be declared final
+src/main/java/kr/go/me/controller/NoticeController.java:34:	SignatureDeclareThrowsException:	SignatureDeclareThrowsException: A method/constructor should not explicitly throw java.lang.Exception
+src/main/java/kr/go/me/controller/NoticeController.java:35:	AvoidDuplicateLiterals:	AvoidDuplicateLiterals: The String literal "tno" appears 4 times in this file; the first occurrence is on line 35
+src/main/java/kr/go/me/controller/NoticeController.java:35:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'tno' could be declared final
+src/main/java/kr/go/me/controller/NoticeController.java:36:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'dto' could be declared final
+src/main/java/kr/go/me/controller/NoticeController.java:43:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/kr/go/me/controller/NoticeController.java:43:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'model' is not assigned and could be declared final
+src/main/java/kr/go/me/controller/NoticeController.java:43:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'request' is not assigned and could be declared final
+src/main/java/kr/go/me/controller/NoticeController.java:43:	SignatureDeclareThrowsException:	SignatureDeclareThrowsException: A method/constructor should not explicitly throw java.lang.Exception
+src/main/java/kr/go/me/controller/NoticeController.java:48:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/kr/go/me/controller/NoticeController.java:48:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'model' is not assigned and could be declared final
+src/main/java/kr/go/me/controller/NoticeController.java:48:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'request' is not assigned and could be declared final
+src/main/java/kr/go/me/controller/NoticeController.java:48:	SignatureDeclareThrowsException:	SignatureDeclareThrowsException: A method/constructor should not explicitly throw java.lang.Exception
+src/main/java/kr/go/me/controller/NoticeController.java:49:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'dto' could be declared final
+src/main/java/kr/go/me/controller/NoticeController.java:59:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/kr/go/me/controller/NoticeController.java:59:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'model' is not assigned and could be declared final
+src/main/java/kr/go/me/controller/NoticeController.java:59:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'request' is not assigned and could be declared final
+src/main/java/kr/go/me/controller/NoticeController.java:59:	SignatureDeclareThrowsException:	SignatureDeclareThrowsException: A method/constructor should not explicitly throw java.lang.Exception
+src/main/java/kr/go/me/controller/NoticeController.java:60:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'tno' could be declared final
+src/main/java/kr/go/me/controller/NoticeController.java:68:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/kr/go/me/controller/NoticeController.java:68:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'model' is not assigned and could be declared final
+src/main/java/kr/go/me/controller/NoticeController.java:68:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'request' is not assigned and could be declared final
+src/main/java/kr/go/me/controller/NoticeController.java:68:	SignatureDeclareThrowsException:	SignatureDeclareThrowsException: A method/constructor should not explicitly throw java.lang.Exception
+src/main/java/kr/go/me/controller/NoticeController.java:69:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'tno' could be declared final
+src/main/java/kr/go/me/controller/NoticeController.java:70:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'dto' could be declared final
+src/main/java/kr/go/me/controller/NoticeController.java:76:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/kr/go/me/controller/NoticeController.java:76:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'model' is not assigned and could be declared final
+src/main/java/kr/go/me/controller/NoticeController.java:76:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'request' is not assigned and could be declared final
+src/main/java/kr/go/me/controller/NoticeController.java:76:	SignatureDeclareThrowsException:	SignatureDeclareThrowsException: A method/constructor should not explicitly throw java.lang.Exception
+src/main/java/kr/go/me/controller/NoticeController.java:77:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'tno' could be declared final
+src/main/java/kr/go/me/controller/NoticeController.java:79:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'dto' could be declared final
+src/main/java/kr/go/me/controller/QnaController.java:7:	UnnecessaryImport:	UnnecessaryImport: Unused import 'org.slf4j.Logger'
+src/main/java/kr/go/me/controller/QnaController.java:7:	UnusedImports:	UnusedImports: Unused import 'org.slf4j.Logger'
+src/main/java/kr/go/me/controller/QnaController.java:8:	UnnecessaryImport:	UnnecessaryImport: Unused import 'org.slf4j.LoggerFactory'
+src/main/java/kr/go/me/controller/QnaController.java:8:	UnusedImports:	UnusedImports: Unused import 'org.slf4j.LoggerFactory'
+src/main/java/kr/go/me/controller/QnaController.java:21:	AtLeastOneConstructor:	AtLeastOneConstructor: Each class should declare at least one constructor
+src/main/java/kr/go/me/controller/QnaController.java:21:	CommentRequired:	CommentRequired: Class comments are required
+src/main/java/kr/go/me/controller/QnaController.java:23:	DefaultPackage:	DefaultPackage: Use explicit scoping instead of the default package private level
+src/main/java/kr/go/me/controller/QnaController.java:24:	CommentDefaultAccessModifier:	CommentDefaultAccessModifier: To avoid mistakes add a comment at the beginning of the qnaService field if you want a default access modifier
+src/main/java/kr/go/me/controller/QnaController.java:24:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/kr/go/me/controller/QnaController.java:28:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/kr/go/me/controller/QnaController.java:28:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'model' is not assigned and could be declared final
+src/main/java/kr/go/me/controller/QnaController.java:28:	SignatureDeclareThrowsException:	SignatureDeclareThrowsException: A method/constructor should not explicitly throw java.lang.Exception
+src/main/java/kr/go/me/controller/QnaController.java:29:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'qnaList' could be declared final
+src/main/java/kr/go/me/controller/QnaController.java:36:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/kr/go/me/controller/QnaController.java:36:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'model' is not assigned and could be declared final
+src/main/java/kr/go/me/controller/QnaController.java:36:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'request' is not assigned and could be declared final
+src/main/java/kr/go/me/controller/QnaController.java:36:	SignatureDeclareThrowsException:	SignatureDeclareThrowsException: A method/constructor should not explicitly throw java.lang.Exception
+src/main/java/kr/go/me/controller/QnaController.java:37:	AvoidDuplicateLiterals:	AvoidDuplicateLiterals: The String literal "qno" appears 5 times in this file; the first occurrence is on line 37
+src/main/java/kr/go/me/controller/QnaController.java:37:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'qno' could be declared final
+src/main/java/kr/go/me/controller/QnaController.java:38:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'dto' could be declared final
+src/main/java/kr/go/me/controller/QnaController.java:45:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/kr/go/me/controller/QnaController.java:45:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'model' is not assigned and could be declared final
+src/main/java/kr/go/me/controller/QnaController.java:45:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'request' is not assigned and could be declared final
+src/main/java/kr/go/me/controller/QnaController.java:45:	SignatureDeclareThrowsException:	SignatureDeclareThrowsException: A method/constructor should not explicitly throw java.lang.Exception
+src/main/java/kr/go/me/controller/QnaController.java:51:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/kr/go/me/controller/QnaController.java:51:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'model' is not assigned and could be declared final
+src/main/java/kr/go/me/controller/QnaController.java:51:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'request' is not assigned and could be declared final
+src/main/java/kr/go/me/controller/QnaController.java:51:	SignatureDeclareThrowsException:	SignatureDeclareThrowsException: A method/constructor should not explicitly throw java.lang.Exception
+src/main/java/kr/go/me/controller/QnaController.java:52:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'dto' could be declared final
+src/main/java/kr/go/me/controller/QnaController.java:60:	AvoidDuplicateLiterals:	AvoidDuplicateLiterals: The String literal "redirect:list" appears 4 times in this file; the first occurrence is on line 60
+src/main/java/kr/go/me/controller/QnaController.java:65:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/kr/go/me/controller/QnaController.java:65:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'model' is not assigned and could be declared final
+src/main/java/kr/go/me/controller/QnaController.java:65:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'request' is not assigned and could be declared final
+src/main/java/kr/go/me/controller/QnaController.java:65:	SignatureDeclareThrowsException:	SignatureDeclareThrowsException: A method/constructor should not explicitly throw java.lang.Exception
+src/main/java/kr/go/me/controller/QnaController.java:66:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'parno' could be declared final
+src/main/java/kr/go/me/controller/QnaController.java:67:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'dto' could be declared final
+src/main/java/kr/go/me/controller/QnaController.java:73:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/kr/go/me/controller/QnaController.java:73:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'model' is not assigned and could be declared final
+src/main/java/kr/go/me/controller/QnaController.java:73:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'request' is not assigned and could be declared final
+src/main/java/kr/go/me/controller/QnaController.java:73:	SignatureDeclareThrowsException:	SignatureDeclareThrowsException: A method/constructor should not explicitly throw java.lang.Exception
+src/main/java/kr/go/me/controller/QnaController.java:74:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'dto' could be declared final
+src/main/java/kr/go/me/controller/QnaController.java:88:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/kr/go/me/controller/QnaController.java:88:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'model' is not assigned and could be declared final
+src/main/java/kr/go/me/controller/QnaController.java:88:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'request' is not assigned and could be declared final
+src/main/java/kr/go/me/controller/QnaController.java:88:	SignatureDeclareThrowsException:	SignatureDeclareThrowsException: A method/constructor should not explicitly throw java.lang.Exception
+src/main/java/kr/go/me/controller/QnaController.java:89:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'qno' could be declared final
+src/main/java/kr/go/me/controller/QnaController.java:97:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/kr/go/me/controller/QnaController.java:97:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'model' is not assigned and could be declared final
+src/main/java/kr/go/me/controller/QnaController.java:97:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'request' is not assigned and could be declared final
+src/main/java/kr/go/me/controller/QnaController.java:97:	SignatureDeclareThrowsException:	SignatureDeclareThrowsException: A method/constructor should not explicitly throw java.lang.Exception
+src/main/java/kr/go/me/controller/QnaController.java:98:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'qno' could be declared final
+src/main/java/kr/go/me/controller/QnaController.java:99:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'dto' could be declared final
+src/main/java/kr/go/me/controller/QnaController.java:105:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/kr/go/me/controller/QnaController.java:105:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'model' is not assigned and could be declared final
+src/main/java/kr/go/me/controller/QnaController.java:105:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'request' is not assigned and could be declared final
+src/main/java/kr/go/me/controller/QnaController.java:105:	SignatureDeclareThrowsException:	SignatureDeclareThrowsException: A method/constructor should not explicitly throw java.lang.Exception
+src/main/java/kr/go/me/controller/QnaController.java:106:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'qno' could be declared final
+src/main/java/kr/go/me/controller/QnaController.java:108:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'dto' could be declared final
+src/main/java/kr/go/me/controller/SampleController.java:17:	AtLeastOneConstructor:	AtLeastOneConstructor: Each class should declare at least one constructor
+src/main/java/kr/go/me/controller/SampleController.java:17:	CommentRequired:	CommentRequired: Class comments are required
+src/main/java/kr/go/me/controller/SampleController.java:19:	DefaultPackage:	DefaultPackage: Use explicit scoping instead of the default package private level
+src/main/java/kr/go/me/controller/SampleController.java:20:	CommentDefaultAccessModifier:	CommentDefaultAccessModifier: To avoid mistakes add a comment at the beginning of the sampleService field if you want a default access modifier
+src/main/java/kr/go/me/controller/SampleController.java:20:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/kr/go/me/controller/SampleController.java:23:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/kr/go/me/controller/SampleController.java:23:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'model' is not assigned and could be declared final
+src/main/java/kr/go/me/controller/SampleController.java:23:	SignatureDeclareThrowsException:	SignatureDeclareThrowsException: A method/constructor should not explicitly throw java.lang.Exception
+src/main/java/kr/go/me/controller/SampleController.java:24:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'sampleList' could be declared final
+src/main/java/kr/go/me/controller/SampleController.java:30:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/kr/go/me/controller/SampleController.java:30:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'id' is not assigned and could be declared final
+src/main/java/kr/go/me/controller/SampleController.java:30:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'model' is not assigned and could be declared final
+src/main/java/kr/go/me/controller/SampleController.java:30:	ShortVariable:	ShortVariable: Avoid variables with short names like id
+src/main/java/kr/go/me/controller/SampleController.java:30:	SignatureDeclareThrowsException:	SignatureDeclareThrowsException: A method/constructor should not explicitly throw java.lang.Exception
+src/main/java/kr/go/me/controller/SampleController.java:31:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'sample' could be declared final
+src/main/java/kr/go/me/dto/MemberDTO.java:6:	CommentRequired:	CommentRequired: Class comments are required
+src/main/java/kr/go/me/dto/MemberDTO.java:7:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/kr/go/me/dto/MemberDTO.java:7:	ShortVariable:	ShortVariable: Avoid variables with short names like no
+src/main/java/kr/go/me/dto/MemberDTO.java:8:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/kr/go/me/dto/MemberDTO.java:8:	ShortVariable:	ShortVariable: Avoid variables with short names like id
+src/main/java/kr/go/me/dto/MemberDTO.java:9:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/kr/go/me/dto/MemberDTO.java:9:	ShortVariable:	ShortVariable: Avoid variables with short names like pw
+src/main/java/kr/go/me/dto/MemberDTO.java:10:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/kr/go/me/dto/MemberDTO.java:11:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/kr/go/me/dto/MemberDTO.java:12:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/kr/go/me/dto/MemberDTO.java:13:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/kr/go/me/dto/MemberDTO.java:14:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/kr/go/me/dto/MemberDTO.java:15:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/kr/go/me/dto/MemberDTO.java:16:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/kr/go/me/dto/NoticeDTO.java:6:	CommentRequired:	CommentRequired: Class comments are required
+src/main/java/kr/go/me/dto/NoticeDTO.java:7:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/kr/go/me/dto/NoticeDTO.java:8:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/kr/go/me/dto/NoticeDTO.java:9:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/kr/go/me/dto/NoticeDTO.java:10:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/kr/go/me/dto/NoticeDTO.java:11:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/kr/go/me/dto/NoticeDTO.java:12:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/kr/go/me/dto/QnaDTO.java:6:	CommentRequired:	CommentRequired: Class comments are required
+src/main/java/kr/go/me/dto/QnaDTO.java:8:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/kr/go/me/dto/QnaDTO.java:9:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/kr/go/me/dto/QnaDTO.java:10:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/kr/go/me/dto/QnaDTO.java:11:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/kr/go/me/dto/QnaDTO.java:12:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/kr/go/me/dto/QnaDTO.java:13:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/kr/go/me/dto/QnaDTO.java:14:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/kr/go/me/dto/QnaDTO.java:15:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/kr/go/me/dto/QnaDTO.java:16:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/kr/go/me/dto/SampleDTO.java:6:	CommentRequired:	CommentRequired: Class comments are required
+src/main/java/kr/go/me/dto/SampleDTO.java:7:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/kr/go/me/dto/SampleDTO.java:7:	ShortVariable:	ShortVariable: Avoid variables with short names like id
+src/main/java/kr/go/me/dto/SampleDTO.java:8:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/kr/go/me/dto/SampleDTO.java:8:	ShortVariable:	ShortVariable: Avoid variables with short names like pw
+src/main/java/kr/go/me/model/MemberDAO.java:7:	CommentRequired:	CommentRequired: Class comments are required
+src/main/java/kr/go/me/model/MemberDAO.java:8:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/kr/go/me/model/MemberDAO.java:8:	SignatureDeclareThrowsException:	SignatureDeclareThrowsException: A method/constructor should not explicitly throw java.lang.Exception
+src/main/java/kr/go/me/model/MemberDAO.java:8:	UnnecessaryModifier:	UnnecessaryModifier: Unnecessary modifier 'public' on method 'memberList': the method is declared in an interface type
+src/main/java/kr/go/me/model/MemberDAO.java:9:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/kr/go/me/model/MemberDAO.java:9:	ShortVariable:	ShortVariable: Avoid variables with short names like id
+src/main/java/kr/go/me/model/MemberDAO.java:9:	SignatureDeclareThrowsException:	SignatureDeclareThrowsException: A method/constructor should not explicitly throw java.lang.Exception
+src/main/java/kr/go/me/model/MemberDAO.java:9:	UnnecessaryModifier:	UnnecessaryModifier: Unnecessary modifier 'public' on method 'getMember': the method is declared in an interface type
+src/main/java/kr/go/me/model/MemberDAO.java:10:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/kr/go/me/model/MemberDAO.java:10:	SignatureDeclareThrowsException:	SignatureDeclareThrowsException: A method/constructor should not explicitly throw java.lang.Exception
+src/main/java/kr/go/me/model/MemberDAO.java:10:	UnnecessaryModifier:	UnnecessaryModifier: Unnecessary modifier 'public' on method 'memberInsert': the method is declared in an interface type
+src/main/java/kr/go/me/model/MemberDAO.java:11:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/kr/go/me/model/MemberDAO.java:11:	SignatureDeclareThrowsException:	SignatureDeclareThrowsException: A method/constructor should not explicitly throw java.lang.Exception
+src/main/java/kr/go/me/model/MemberDAO.java:11:	UnnecessaryModifier:	UnnecessaryModifier: Unnecessary modifier 'public' on method 'signIn': the method is declared in an interface type
+src/main/java/kr/go/me/model/MemberDAO.java:12:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/kr/go/me/model/MemberDAO.java:12:	SignatureDeclareThrowsException:	SignatureDeclareThrowsException: A method/constructor should not explicitly throw java.lang.Exception
+src/main/java/kr/go/me/model/MemberDAO.java:12:	UnnecessaryModifier:	UnnecessaryModifier: Unnecessary modifier 'public' on method 'memberUpdate': the method is declared in an interface type
+src/main/java/kr/go/me/model/MemberDAO.java:13:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/kr/go/me/model/MemberDAO.java:13:	ShortVariable:	ShortVariable: Avoid variables with short names like id
+src/main/java/kr/go/me/model/MemberDAO.java:13:	SignatureDeclareThrowsException:	SignatureDeclareThrowsException: A method/constructor should not explicitly throw java.lang.Exception
+src/main/java/kr/go/me/model/MemberDAO.java:13:	UnnecessaryModifier:	UnnecessaryModifier: Unnecessary modifier 'public' on method 'memberDelete': the method is declared in an interface type
+src/main/java/kr/go/me/model/MemberDAOImpl.java:12:	AtLeastOneConstructor:	AtLeastOneConstructor: Each class should declare at least one constructor
+src/main/java/kr/go/me/model/MemberDAOImpl.java:12:	CommentRequired:	CommentRequired: Class comments are required
+src/main/java/kr/go/me/model/MemberDAOImpl.java:14:	DefaultPackage:	DefaultPackage: Use explicit scoping instead of the default package private level
+src/main/java/kr/go/me/model/MemberDAOImpl.java:15:	CommentDefaultAccessModifier:	CommentDefaultAccessModifier: To avoid mistakes add a comment at the beginning of the sqlSession field if you want a default access modifier
+src/main/java/kr/go/me/model/MemberDAOImpl.java:15:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/kr/go/me/model/MemberDAOImpl.java:25:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'id' is not assigned and could be declared final
+src/main/java/kr/go/me/model/MemberDAOImpl.java:25:	ShortVariable:	ShortVariable: Avoid variables with short names like id
+src/main/java/kr/go/me/model/MemberDAOImpl.java:31:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'dto' is not assigned and could be declared final
+src/main/java/kr/go/me/model/MemberDAOImpl.java:38:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'mdto' is not assigned and could be declared final
+src/main/java/kr/go/me/model/MemberDAOImpl.java:44:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'mdto' is not assigned and could be declared final
+src/main/java/kr/go/me/model/MemberDAOImpl.java:51:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'id' is not assigned and could be declared final
+src/main/java/kr/go/me/model/MemberDAOImpl.java:51:	ShortVariable:	ShortVariable: Avoid variables with short names like id
+src/main/java/kr/go/me/model/NoticeDAO.java:7:	CommentRequired:	CommentRequired: Class comments are required
+src/main/java/kr/go/me/model/NoticeDAO.java:8:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/kr/go/me/model/NoticeDAO.java:8:	SignatureDeclareThrowsException:	SignatureDeclareThrowsException: A method/constructor should not explicitly throw java.lang.Exception
+src/main/java/kr/go/me/model/NoticeDAO.java:8:	UnnecessaryModifier:	UnnecessaryModifier: Unnecessary modifier 'public' on method 'noticeList': the method is declared in an interface type
+src/main/java/kr/go/me/model/NoticeDAO.java:9:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/kr/go/me/model/NoticeDAO.java:9:	SignatureDeclareThrowsException:	SignatureDeclareThrowsException: A method/constructor should not explicitly throw java.lang.Exception
+src/main/java/kr/go/me/model/NoticeDAO.java:9:	UnnecessaryModifier:	UnnecessaryModifier: Unnecessary modifier 'public' on method 'getNotice': the method is declared in an interface type
+src/main/java/kr/go/me/model/NoticeDAO.java:10:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/kr/go/me/model/NoticeDAO.java:10:	SignatureDeclareThrowsException:	SignatureDeclareThrowsException: A method/constructor should not explicitly throw java.lang.Exception
+src/main/java/kr/go/me/model/NoticeDAO.java:10:	UnnecessaryModifier:	UnnecessaryModifier: Unnecessary modifier 'public' on method 'addNotice': the method is declared in an interface type
+src/main/java/kr/go/me/model/NoticeDAO.java:11:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/kr/go/me/model/NoticeDAO.java:11:	SignatureDeclareThrowsException:	SignatureDeclareThrowsException: A method/constructor should not explicitly throw java.lang.Exception
+src/main/java/kr/go/me/model/NoticeDAO.java:11:	UnnecessaryModifier:	UnnecessaryModifier: Unnecessary modifier 'public' on method 'noticeDelete': the method is declared in an interface type
+src/main/java/kr/go/me/model/NoticeDAO.java:12:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/kr/go/me/model/NoticeDAO.java:12:	SignatureDeclareThrowsException:	SignatureDeclareThrowsException: A method/constructor should not explicitly throw java.lang.Exception
+src/main/java/kr/go/me/model/NoticeDAO.java:12:	UnnecessaryModifier:	UnnecessaryModifier: Unnecessary modifier 'public' on method 'noticeEdit': the method is declared in an interface type
+src/main/java/kr/go/me/model/NoticeDAOImpl.java:13:	AtLeastOneConstructor:	AtLeastOneConstructor: Each class should declare at least one constructor
+src/main/java/kr/go/me/model/NoticeDAOImpl.java:13:	CommentRequired:	CommentRequired: Class comments are required
+src/main/java/kr/go/me/model/NoticeDAOImpl.java:15:	DefaultPackage:	DefaultPackage: Use explicit scoping instead of the default package private level
+src/main/java/kr/go/me/model/NoticeDAOImpl.java:16:	CommentDefaultAccessModifier:	CommentDefaultAccessModifier: To avoid mistakes add a comment at the beginning of the sqlSession field if you want a default access modifier
+src/main/java/kr/go/me/model/NoticeDAOImpl.java:16:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/kr/go/me/model/NoticeDAOImpl.java:25:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'tno' is not assigned and could be declared final
+src/main/java/kr/go/me/model/NoticeDAOImpl.java:31:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'notice' is not assigned and could be declared final
+src/main/java/kr/go/me/model/NoticeDAOImpl.java:37:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'tno' is not assigned and could be declared final
+src/main/java/kr/go/me/model/NoticeDAOImpl.java:43:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'dto' is not assigned and could be declared final
+src/main/java/kr/go/me/model/QnaDAO.java:7:	CommentRequired:	CommentRequired: Class comments are required
+src/main/java/kr/go/me/model/QnaDAO.java:8:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/kr/go/me/model/QnaDAO.java:8:	SignatureDeclareThrowsException:	SignatureDeclareThrowsException: A method/constructor should not explicitly throw java.lang.Exception
+src/main/java/kr/go/me/model/QnaDAO.java:8:	UnnecessaryModifier:	UnnecessaryModifier: Unnecessary modifier 'public' on method 'qnaList': the method is declared in an interface type
+src/main/java/kr/go/me/model/QnaDAO.java:9:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/kr/go/me/model/QnaDAO.java:9:	SignatureDeclareThrowsException:	SignatureDeclareThrowsException: A method/constructor should not explicitly throw java.lang.Exception
+src/main/java/kr/go/me/model/QnaDAO.java:9:	UnnecessaryModifier:	UnnecessaryModifier: Unnecessary modifier 'public' on method 'getQna': the method is declared in an interface type
+src/main/java/kr/go/me/model/QnaDAO.java:10:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/kr/go/me/model/QnaDAO.java:10:	SignatureDeclareThrowsException:	SignatureDeclareThrowsException: A method/constructor should not explicitly throw java.lang.Exception
+src/main/java/kr/go/me/model/QnaDAO.java:10:	UnnecessaryModifier:	UnnecessaryModifier: Unnecessary modifier 'public' on method 'addQna': the method is declared in an interface type
+src/main/java/kr/go/me/model/QnaDAO.java:11:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/kr/go/me/model/QnaDAO.java:11:	SignatureDeclareThrowsException:	SignatureDeclareThrowsException: A method/constructor should not explicitly throw java.lang.Exception
+src/main/java/kr/go/me/model/QnaDAO.java:11:	UnnecessaryModifier:	UnnecessaryModifier: Unnecessary modifier 'public' on method 'addReply': the method is declared in an interface type
+src/main/java/kr/go/me/model/QnaDAO.java:12:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/kr/go/me/model/QnaDAO.java:12:	SignatureDeclareThrowsException:	SignatureDeclareThrowsException: A method/constructor should not explicitly throw java.lang.Exception
+src/main/java/kr/go/me/model/QnaDAO.java:12:	UnnecessaryModifier:	UnnecessaryModifier: Unnecessary modifier 'public' on method 'qnaDelete': the method is declared in an interface type
+src/main/java/kr/go/me/model/QnaDAO.java:13:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/kr/go/me/model/QnaDAO.java:13:	SignatureDeclareThrowsException:	SignatureDeclareThrowsException: A method/constructor should not explicitly throw java.lang.Exception
+src/main/java/kr/go/me/model/QnaDAO.java:13:	UnnecessaryModifier:	UnnecessaryModifier: Unnecessary modifier 'public' on method 'qnaEdit': the method is declared in an interface type
+src/main/java/kr/go/me/model/QnaDAOImpl.java:12:	AtLeastOneConstructor:	AtLeastOneConstructor: Each class should declare at least one constructor
+src/main/java/kr/go/me/model/QnaDAOImpl.java:12:	CommentRequired:	CommentRequired: Class comments are required
+src/main/java/kr/go/me/model/QnaDAOImpl.java:14:	DefaultPackage:	DefaultPackage: Use explicit scoping instead of the default package private level
+src/main/java/kr/go/me/model/QnaDAOImpl.java:15:	CommentDefaultAccessModifier:	CommentDefaultAccessModifier: To avoid mistakes add a comment at the beginning of the sqlSession field if you want a default access modifier
+src/main/java/kr/go/me/model/QnaDAOImpl.java:15:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/kr/go/me/model/QnaDAOImpl.java:23:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'qno' is not assigned and could be declared final
+src/main/java/kr/go/me/model/QnaDAOImpl.java:28:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'qna' is not assigned and could be declared final
+src/main/java/kr/go/me/model/QnaDAOImpl.java:34:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'qna' is not assigned and could be declared final
+src/main/java/kr/go/me/model/QnaDAOImpl.java:40:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'qno' is not assigned and could be declared final
+src/main/java/kr/go/me/model/QnaDAOImpl.java:46:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'dto' is not assigned and could be declared final
+src/main/java/kr/go/me/model/SampleDAO.java:7:	CommentRequired:	CommentRequired: Class comments are required
+src/main/java/kr/go/me/model/SampleDAO.java:8:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/kr/go/me/model/SampleDAO.java:8:	SignatureDeclareThrowsException:	SignatureDeclareThrowsException: A method/constructor should not explicitly throw java.lang.Exception
+src/main/java/kr/go/me/model/SampleDAO.java:8:	UnnecessaryModifier:	UnnecessaryModifier: Unnecessary modifier 'public' on method 'sampleList': the method is declared in an interface type
+src/main/java/kr/go/me/model/SampleDAO.java:9:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/kr/go/me/model/SampleDAO.java:9:	ShortVariable:	ShortVariable: Avoid variables with short names like id
+src/main/java/kr/go/me/model/SampleDAO.java:9:	SignatureDeclareThrowsException:	SignatureDeclareThrowsException: A method/constructor should not explicitly throw java.lang.Exception
+src/main/java/kr/go/me/model/SampleDAO.java:9:	UnnecessaryModifier:	UnnecessaryModifier: Unnecessary modifier 'public' on method 'getSample': the method is declared in an interface type
+src/main/java/kr/go/me/model/SampleDAO.java:10:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/kr/go/me/model/SampleDAO.java:10:	SignatureDeclareThrowsException:	SignatureDeclareThrowsException: A method/constructor should not explicitly throw java.lang.Exception
+src/main/java/kr/go/me/model/SampleDAO.java:10:	UnnecessaryModifier:	UnnecessaryModifier: Unnecessary modifier 'public' on method 'addSample': the method is declared in an interface type
+src/main/java/kr/go/me/model/SampleDAOImpl.java:12:	AtLeastOneConstructor:	AtLeastOneConstructor: Each class should declare at least one constructor
+src/main/java/kr/go/me/model/SampleDAOImpl.java:12:	CommentRequired:	CommentRequired: Class comments are required
+src/main/java/kr/go/me/model/SampleDAOImpl.java:14:	DefaultPackage:	DefaultPackage: Use explicit scoping instead of the default package private level
+src/main/java/kr/go/me/model/SampleDAOImpl.java:15:	CommentDefaultAccessModifier:	CommentDefaultAccessModifier: To avoid mistakes add a comment at the beginning of the sqlSession field if you want a default access modifier
+src/main/java/kr/go/me/model/SampleDAOImpl.java:15:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/kr/go/me/model/SampleDAOImpl.java:23:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'id' is not assigned and could be declared final
+src/main/java/kr/go/me/model/SampleDAOImpl.java:23:	ShortVariable:	ShortVariable: Avoid variables with short names like id
+src/main/java/kr/go/me/model/SampleDAOImpl.java:28:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'sample' is not assigned and could be declared final
+src/main/java/kr/go/me/service/MemberService.java:7:	CommentRequired:	CommentRequired: Class comments are required
+src/main/java/kr/go/me/service/MemberService.java:8:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/kr/go/me/service/MemberService.java:8:	SignatureDeclareThrowsException:	SignatureDeclareThrowsException: A method/constructor should not explicitly throw java.lang.Exception
+src/main/java/kr/go/me/service/MemberService.java:8:	UnnecessaryModifier:	UnnecessaryModifier: Unnecessary modifier 'public' on method 'memberList': the method is declared in an interface type
+src/main/java/kr/go/me/service/MemberService.java:9:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/kr/go/me/service/MemberService.java:9:	ShortVariable:	ShortVariable: Avoid variables with short names like id
+src/main/java/kr/go/me/service/MemberService.java:9:	SignatureDeclareThrowsException:	SignatureDeclareThrowsException: A method/constructor should not explicitly throw java.lang.Exception
+src/main/java/kr/go/me/service/MemberService.java:9:	UnnecessaryModifier:	UnnecessaryModifier: Unnecessary modifier 'public' on method 'getMember': the method is declared in an interface type
+src/main/java/kr/go/me/service/MemberService.java:10:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/kr/go/me/service/MemberService.java:10:	SignatureDeclareThrowsException:	SignatureDeclareThrowsException: A method/constructor should not explicitly throw java.lang.Exception
+src/main/java/kr/go/me/service/MemberService.java:10:	UnnecessaryModifier:	UnnecessaryModifier: Unnecessary modifier 'public' on method 'memberInsert': the method is declared in an interface type
+src/main/java/kr/go/me/service/MemberService.java:11:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/kr/go/me/service/MemberService.java:11:	SignatureDeclareThrowsException:	SignatureDeclareThrowsException: A method/constructor should not explicitly throw java.lang.Exception
+src/main/java/kr/go/me/service/MemberService.java:11:	UnnecessaryModifier:	UnnecessaryModifier: Unnecessary modifier 'public' on method 'signIn': the method is declared in an interface type
+src/main/java/kr/go/me/service/MemberService.java:12:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/kr/go/me/service/MemberService.java:12:	SignatureDeclareThrowsException:	SignatureDeclareThrowsException: A method/constructor should not explicitly throw java.lang.Exception
+src/main/java/kr/go/me/service/MemberService.java:12:	UnnecessaryModifier:	UnnecessaryModifier: Unnecessary modifier 'public' on method 'memberUpdate': the method is declared in an interface type
+src/main/java/kr/go/me/service/MemberService.java:13:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/kr/go/me/service/MemberService.java:13:	ShortVariable:	ShortVariable: Avoid variables with short names like id
+src/main/java/kr/go/me/service/MemberService.java:13:	SignatureDeclareThrowsException:	SignatureDeclareThrowsException: A method/constructor should not explicitly throw java.lang.Exception
+src/main/java/kr/go/me/service/MemberService.java:13:	UnnecessaryModifier:	UnnecessaryModifier: Unnecessary modifier 'public' on method 'memberDelete': the method is declared in an interface type
+src/main/java/kr/go/me/service/MemberServiceImpl.java:15:	AtLeastOneConstructor:	AtLeastOneConstructor: Each class should declare at least one constructor
+src/main/java/kr/go/me/service/MemberServiceImpl.java:15:	CommentRequired:	CommentRequired: Class comments are required
+src/main/java/kr/go/me/service/MemberServiceImpl.java:17:	DefaultPackage:	DefaultPackage: Use explicit scoping instead of the default package private level
+src/main/java/kr/go/me/service/MemberServiceImpl.java:18:	CommentDefaultAccessModifier:	CommentDefaultAccessModifier: To avoid mistakes add a comment at the beginning of the memberDao field if you want a default access modifier
+src/main/java/kr/go/me/service/MemberServiceImpl.java:18:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/kr/go/me/service/MemberServiceImpl.java:20:	DefaultPackage:	DefaultPackage: Use explicit scoping instead of the default package private level
+src/main/java/kr/go/me/service/MemberServiceImpl.java:21:	CommentDefaultAccessModifier:	CommentDefaultAccessModifier: To avoid mistakes add a comment at the beginning of the pwdEncoder field if you want a default access modifier
+src/main/java/kr/go/me/service/MemberServiceImpl.java:21:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/kr/go/me/service/MemberServiceImpl.java:31:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'id' is not assigned and could be declared final
+src/main/java/kr/go/me/service/MemberServiceImpl.java:31:	ShortVariable:	ShortVariable: Avoid variables with short names like id
+src/main/java/kr/go/me/service/MemberServiceImpl.java:37:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'dto' is not assigned and could be declared final
+src/main/java/kr/go/me/service/MemberServiceImpl.java:44:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'mdto' is not assigned and could be declared final
+src/main/java/kr/go/me/service/MemberServiceImpl.java:50:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'mdto' is not assigned and could be declared final
+src/main/java/kr/go/me/service/MemberServiceImpl.java:57:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'id' is not assigned and could be declared final
+src/main/java/kr/go/me/service/MemberServiceImpl.java:57:	ShortVariable:	ShortVariable: Avoid variables with short names like id
+src/main/java/kr/go/me/service/NoticeService.java:7:	CommentRequired:	CommentRequired: Class comments are required
+src/main/java/kr/go/me/service/NoticeService.java:8:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/kr/go/me/service/NoticeService.java:8:	SignatureDeclareThrowsException:	SignatureDeclareThrowsException: A method/constructor should not explicitly throw java.lang.Exception
+src/main/java/kr/go/me/service/NoticeService.java:8:	UnnecessaryModifier:	UnnecessaryModifier: Unnecessary modifier 'public' on method 'noticeList': the method is declared in an interface type
+src/main/java/kr/go/me/service/NoticeService.java:9:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/kr/go/me/service/NoticeService.java:9:	SignatureDeclareThrowsException:	SignatureDeclareThrowsException: A method/constructor should not explicitly throw java.lang.Exception
+src/main/java/kr/go/me/service/NoticeService.java:9:	UnnecessaryModifier:	UnnecessaryModifier: Unnecessary modifier 'public' on method 'getNotice': the method is declared in an interface type
+src/main/java/kr/go/me/service/NoticeService.java:10:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/kr/go/me/service/NoticeService.java:10:	SignatureDeclareThrowsException:	SignatureDeclareThrowsException: A method/constructor should not explicitly throw java.lang.Exception
+src/main/java/kr/go/me/service/NoticeService.java:10:	UnnecessaryModifier:	UnnecessaryModifier: Unnecessary modifier 'public' on method 'addNotice': the method is declared in an interface type
+src/main/java/kr/go/me/service/NoticeService.java:11:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/kr/go/me/service/NoticeService.java:11:	SignatureDeclareThrowsException:	SignatureDeclareThrowsException: A method/constructor should not explicitly throw java.lang.Exception
+src/main/java/kr/go/me/service/NoticeService.java:11:	UnnecessaryModifier:	UnnecessaryModifier: Unnecessary modifier 'public' on method 'noticeDelete': the method is declared in an interface type
+src/main/java/kr/go/me/service/NoticeService.java:12:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/kr/go/me/service/NoticeService.java:12:	SignatureDeclareThrowsException:	SignatureDeclareThrowsException: A method/constructor should not explicitly throw java.lang.Exception
+src/main/java/kr/go/me/service/NoticeService.java:12:	UnnecessaryModifier:	UnnecessaryModifier: Unnecessary modifier 'public' on method 'noticeEdit': the method is declared in an interface type
+src/main/java/kr/go/me/service/NoticeServiceImpl.java:12:	AtLeastOneConstructor:	AtLeastOneConstructor: Each class should declare at least one constructor
+src/main/java/kr/go/me/service/NoticeServiceImpl.java:12:	CommentRequired:	CommentRequired: Class comments are required
+src/main/java/kr/go/me/service/NoticeServiceImpl.java:14:	DefaultPackage:	DefaultPackage: Use explicit scoping instead of the default package private level
+src/main/java/kr/go/me/service/NoticeServiceImpl.java:15:	CommentDefaultAccessModifier:	CommentDefaultAccessModifier: To avoid mistakes add a comment at the beginning of the noticeDAO field if you want a default access modifier
+src/main/java/kr/go/me/service/NoticeServiceImpl.java:15:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/kr/go/me/service/NoticeServiceImpl.java:23:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'tno' is not assigned and could be declared final
+src/main/java/kr/go/me/service/NoticeServiceImpl.java:28:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'notice' is not assigned and could be declared final
+src/main/java/kr/go/me/service/NoticeServiceImpl.java:34:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'tno' is not assigned and could be declared final
+src/main/java/kr/go/me/service/NoticeServiceImpl.java:40:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'dto' is not assigned and could be declared final
+src/main/java/kr/go/me/service/QnaService.java:7:	CommentRequired:	CommentRequired: Class comments are required
+src/main/java/kr/go/me/service/QnaService.java:8:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/kr/go/me/service/QnaService.java:8:	SignatureDeclareThrowsException:	SignatureDeclareThrowsException: A method/constructor should not explicitly throw java.lang.Exception
+src/main/java/kr/go/me/service/QnaService.java:8:	UnnecessaryModifier:	UnnecessaryModifier: Unnecessary modifier 'public' on method 'qnaList': the method is declared in an interface type
+src/main/java/kr/go/me/service/QnaService.java:9:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/kr/go/me/service/QnaService.java:9:	SignatureDeclareThrowsException:	SignatureDeclareThrowsException: A method/constructor should not explicitly throw java.lang.Exception
+src/main/java/kr/go/me/service/QnaService.java:9:	UnnecessaryModifier:	UnnecessaryModifier: Unnecessary modifier 'public' on method 'getQna': the method is declared in an interface type
+src/main/java/kr/go/me/service/QnaService.java:10:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/kr/go/me/service/QnaService.java:10:	SignatureDeclareThrowsException:	SignatureDeclareThrowsException: A method/constructor should not explicitly throw java.lang.Exception
+src/main/java/kr/go/me/service/QnaService.java:10:	UnnecessaryModifier:	UnnecessaryModifier: Unnecessary modifier 'public' on method 'addQna': the method is declared in an interface type
+src/main/java/kr/go/me/service/QnaService.java:11:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/kr/go/me/service/QnaService.java:11:	SignatureDeclareThrowsException:	SignatureDeclareThrowsException: A method/constructor should not explicitly throw java.lang.Exception
+src/main/java/kr/go/me/service/QnaService.java:11:	UnnecessaryModifier:	UnnecessaryModifier: Unnecessary modifier 'public' on method 'addReply': the method is declared in an interface type
+src/main/java/kr/go/me/service/QnaService.java:12:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/kr/go/me/service/QnaService.java:12:	SignatureDeclareThrowsException:	SignatureDeclareThrowsException: A method/constructor should not explicitly throw java.lang.Exception
+src/main/java/kr/go/me/service/QnaService.java:12:	UnnecessaryModifier:	UnnecessaryModifier: Unnecessary modifier 'public' on method 'qnaDelete': the method is declared in an interface type
+src/main/java/kr/go/me/service/QnaService.java:13:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/kr/go/me/service/QnaService.java:13:	SignatureDeclareThrowsException:	SignatureDeclareThrowsException: A method/constructor should not explicitly throw java.lang.Exception
+src/main/java/kr/go/me/service/QnaService.java:13:	UnnecessaryModifier:	UnnecessaryModifier: Unnecessary modifier 'public' on method 'qnaEdit': the method is declared in an interface type
+src/main/java/kr/go/me/service/QnaServiceImpl.java:12:	AtLeastOneConstructor:	AtLeastOneConstructor: Each class should declare at least one constructor
+src/main/java/kr/go/me/service/QnaServiceImpl.java:12:	CommentRequired:	CommentRequired: Class comments are required
+src/main/java/kr/go/me/service/QnaServiceImpl.java:14:	DefaultPackage:	DefaultPackage: Use explicit scoping instead of the default package private level
+src/main/java/kr/go/me/service/QnaServiceImpl.java:15:	CommentDefaultAccessModifier:	CommentDefaultAccessModifier: To avoid mistakes add a comment at the beginning of the qnaDAO field if you want a default access modifier
+src/main/java/kr/go/me/service/QnaServiceImpl.java:15:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/kr/go/me/service/QnaServiceImpl.java:23:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'qno' is not assigned and could be declared final
+src/main/java/kr/go/me/service/QnaServiceImpl.java:28:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'qna' is not assigned and could be declared final
+src/main/java/kr/go/me/service/QnaServiceImpl.java:34:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'qna' is not assigned and could be declared final
+src/main/java/kr/go/me/service/QnaServiceImpl.java:40:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'qno' is not assigned and could be declared final
+src/main/java/kr/go/me/service/QnaServiceImpl.java:46:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'dto' is not assigned and could be declared final
+src/main/java/kr/go/me/service/SampleService.java:7:	CommentRequired:	CommentRequired: Class comments are required
+src/main/java/kr/go/me/service/SampleService.java:8:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/kr/go/me/service/SampleService.java:8:	SignatureDeclareThrowsException:	SignatureDeclareThrowsException: A method/constructor should not explicitly throw java.lang.Exception
+src/main/java/kr/go/me/service/SampleService.java:8:	UnnecessaryModifier:	UnnecessaryModifier: Unnecessary modifier 'public' on method 'sampleList': the method is declared in an interface type
+src/main/java/kr/go/me/service/SampleService.java:9:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/kr/go/me/service/SampleService.java:9:	ShortVariable:	ShortVariable: Avoid variables with short names like id
+src/main/java/kr/go/me/service/SampleService.java:9:	SignatureDeclareThrowsException:	SignatureDeclareThrowsException: A method/constructor should not explicitly throw java.lang.Exception
+src/main/java/kr/go/me/service/SampleService.java:9:	UnnecessaryModifier:	UnnecessaryModifier: Unnecessary modifier 'public' on method 'getSample': the method is declared in an interface type
+src/main/java/kr/go/me/service/SampleService.java:10:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/kr/go/me/service/SampleService.java:10:	SignatureDeclareThrowsException:	SignatureDeclareThrowsException: A method/constructor should not explicitly throw java.lang.Exception
+src/main/java/kr/go/me/service/SampleService.java:10:	UnnecessaryModifier:	UnnecessaryModifier: Unnecessary modifier 'public' on method 'addSample': the method is declared in an interface type
+src/main/java/kr/go/me/service/SampleServiceImpl.java:12:	AtLeastOneConstructor:	AtLeastOneConstructor: Each class should declare at least one constructor
+src/main/java/kr/go/me/service/SampleServiceImpl.java:12:	CommentRequired:	CommentRequired: Class comments are required
+src/main/java/kr/go/me/service/SampleServiceImpl.java:14:	DefaultPackage:	DefaultPackage: Use explicit scoping instead of the default package private level
+src/main/java/kr/go/me/service/SampleServiceImpl.java:15:	CommentDefaultAccessModifier:	CommentDefaultAccessModifier: To avoid mistakes add a comment at the beginning of the sampleDAO field if you want a default access modifier
+src/main/java/kr/go/me/service/SampleServiceImpl.java:15:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/kr/go/me/service/SampleServiceImpl.java:23:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'id' is not assigned and could be declared final
+src/main/java/kr/go/me/service/SampleServiceImpl.java:23:	ShortVariable:	ShortVariable: Avoid variables with short names like id
+src/main/java/kr/go/me/service/SampleServiceImpl.java:28:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'sample' is not assigned and could be declared final
+src/main/java/kr/go/me/util/AdminInterceptor.java:10:	AtLeastOneConstructor:	AtLeastOneConstructor: Each class should declare at least one constructor
+src/main/java/kr/go/me/util/AdminInterceptor.java:10:	CommentRequired:	CommentRequired: Class comments are required
+src/main/java/kr/go/me/util/AdminInterceptor.java:13:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'request' is not assigned and could be declared final
+src/main/java/kr/go/me/util/AdminInterceptor.java:14:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'handler' is not assigned and could be declared final
+src/main/java/kr/go/me/util/AdminInterceptor.java:14:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'response' is not assigned and could be declared final
+src/main/java/kr/go/me/util/AdminInterceptor.java:16:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'session' could be declared final
+src/main/java/kr/go/me/util/AdminInterceptor.java:17:	DataflowAnomalyAnalysis:	DataflowAnomalyAnalysis: Found 'DU'-anomaly for variable 'sid' (lines '17'-'29').
+src/main/java/kr/go/me/util/AdminInterceptor.java:17:	LawOfDemeter:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/main/java/kr/go/me/util/AdminInterceptor.java:17:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'sid' could be declared final
+src/main/java/kr/go/me/util/AdminInterceptor.java:17:	PrematureDeclaration:	PrematureDeclaration: Avoid declaring a variable if it is unreferenced before a possible exit point.
+src/main/java/kr/go/me/util/AdminInterceptor.java:18:	LawOfDemeter:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/main/java/kr/go/me/util/AdminInterceptor.java:20:	OnlyOneReturn:	OnlyOneReturn: A method should have only one exit point, and that should be the last statement in the method
+src/main/java/kr/go/me/util/AdminInterceptor.java:23:	LawOfDemeter:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/main/java/kr/go/me/util/AdminInterceptor.java:23:	LiteralsFirstInComparisons:	LiteralsFirstInComparisons: Position literals first in String comparisons
+src/main/java/kr/go/me/util/AdminInterceptor.java:23:	PositionLiteralsFirstInComparisons:	PositionLiteralsFirstInComparisons: Position literals first in String comparisons
+src/main/java/kr/go/me/util/AdminInterceptor.java:24:	OnlyOneReturn:	OnlyOneReturn: A method should have only one exit point, and that should be the last statement in the method
+src/main/java/kr/go/me/util/AdminInterceptor.java:31:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'request' is not assigned and could be declared final
+src/main/java/kr/go/me/util/AdminInterceptor.java:32:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'handler' is not assigned and could be declared final
+src/main/java/kr/go/me/util/AdminInterceptor.java:32:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'response' is not assigned and could be declared final
+src/main/java/kr/go/me/util/AdminInterceptor.java:33:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'modelAndView' is not assigned and could be declared final
+src/main/java/kr/go/me/util/LoginCheckInterceptor.java:9:	AtLeastOneConstructor:	AtLeastOneConstructor: Each class should declare at least one constructor
+src/main/java/kr/go/me/util/LoginCheckInterceptor.java:9:	CommentRequired:	CommentRequired: Class comments are required
+src/main/java/kr/go/me/util/LoginCheckInterceptor.java:12:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'handler' is not assigned and could be declared final
+src/main/java/kr/go/me/util/LoginCheckInterceptor.java:12:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'request' is not assigned and could be declared final
+src/main/java/kr/go/me/util/LoginCheckInterceptor.java:12:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'response' is not assigned and could be declared final
+src/main/java/kr/go/me/util/LoginCheckInterceptor.java:14:	DataflowAnomalyAnalysis:	DataflowAnomalyAnalysis: Found 'DD'-anomaly for variable 'flag' (lines '14'-'17').
+src/main/java/kr/go/me/util/LoginCheckInterceptor.java:14:	DataflowAnomalyAnalysis:	DataflowAnomalyAnalysis: Found 'DD'-anomaly for variable 'flag' (lines '14'-'20').
+src/main/java/kr/go/me/util/LoginCheckInterceptor.java:14:	UnusedAssignment:	UnusedAssignment: The initializer for variable 'flag' is never used (overwritten on lines 17 and 20)
+src/main/java/kr/go/me/util/LoginCheckInterceptor.java:15:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'session' could be declared final
+src/main/java/kr/go/me/util/LoginCheckInterceptor.java:16:	LawOfDemeter:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/main/java/kr/go/me/util/SampleInterceptor.java:6:	UnnecessaryImport:	UnnecessaryImport: Unused import 'org.slf4j.Logger'
+src/main/java/kr/go/me/util/SampleInterceptor.java:6:	UnusedImports:	UnusedImports: Unused import 'org.slf4j.Logger'
+src/main/java/kr/go/me/util/SampleInterceptor.java:7:	UnnecessaryImport:	UnnecessaryImport: Unused import 'org.slf4j.LoggerFactory'
+src/main/java/kr/go/me/util/SampleInterceptor.java:7:	UnusedImports:	UnusedImports: Unused import 'org.slf4j.LoggerFactory'
+src/main/java/kr/go/me/util/SampleInterceptor.java:11:	AtLeastOneConstructor:	AtLeastOneConstructor: Each class should declare at least one constructor
+src/main/java/kr/go/me/util/SampleInterceptor.java:11:	CommentRequired:	CommentRequired: Class comments are required
+src/main/java/kr/go/me/util/SampleInterceptor.java:17:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'request' is not assigned and could be declared final
+src/main/java/kr/go/me/util/SampleInterceptor.java:18:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'handler' is not assigned and could be declared final
+src/main/java/kr/go/me/util/SampleInterceptor.java:18:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'response' is not assigned and could be declared final
+src/main/java/kr/go/me/util/SampleInterceptor.java:25:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'request' is not assigned and could be declared final
+src/main/java/kr/go/me/util/SampleInterceptor.java:26:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'handler' is not assigned and could be declared final
+src/main/java/kr/go/me/util/SampleInterceptor.java:26:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'response' is not assigned and could be declared final
+src/main/java/kr/go/me/util/SampleInterceptor.java:27:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'modelAndView' is not assigned and could be declared final
+src/main/java/kr/go/me/util/SampleInterceptor.java:27:	UncommentedEmptyMethodBody:	UncommentedEmptyMethodBody: Document empty method body

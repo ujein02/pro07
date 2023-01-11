@@ -5790,3 +5790,236 @@ user global configuration and to define the default location to store repositori
 not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
 EGit might behave differently since they see different configuration options.
 This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2023-01-11 12:14:36.497 -----------------------------------------------
+eclipse.buildId=3.9.12.202003181024-RELEASE-e415
+java.version=1.8.0_241
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  -product org.springsource.sts.ide
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springsource.sts.ide
+
+!ENTRY org.eclipse.jface 2 0 2023-01-11 12:16:26.132
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2023-01-11 12:16:26.132
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@474deb4c,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@6ba02f70,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2023-01-11 12:17:04.889
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\201-19'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2023-01-11 14:16:32.103 -----------------------------------------------
+eclipse.buildId=3.9.12.202003181024-RELEASE-e415
+java.version=1.8.0_241
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  -product org.springsource.sts.ide -product org.springsource.sts.ide
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springsource.sts.ide -data file:/D:/kje/pro07/ -product org.springsource.sts.ide
+
+!ENTRY org.eclipse.jface 2 0 2023-01-11 14:16:40.855
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2023-01-11 14:16:40.855
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@62d4dac4,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@11efa76e,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2023-01-11 14:16:47.449
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\201-19'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY net.sourceforge.pmd.eclipse.plugin 1 0 2023-01-11 14:37:26.318
+!MESSAGE Creating new auxclasspath class loader for project pro07
+
+!ENTRY net.sourceforge.pmd.eclipse.plugin 2 0 2023-01-11 14:37:26.364
+!MESSAGE Removed misconfigured rule: LoosePackageCoupling  cause: No packages or classes specified
+
+!ENTRY net.sourceforge.pmd.eclipse.plugin 2 0 2023-01-11 14:37:26.929
+!MESSAGE There were configuration errors!
+LoosePackageCoupling: No packages or classes specified
+
+
+!ENTRY net.sourceforge.pmd.eclipse.plugin 2 0 2023-01-11 14:37:29.103
+!MESSAGE Removed misconfigured rule: LoosePackageCoupling  cause: No packages or classes specified
+
+!ENTRY net.sourceforge.pmd.eclipse.plugin 2 0 2023-01-11 14:37:29.150
+!MESSAGE There were configuration errors!
+LoosePackageCoupling: No packages or classes specified
+
+
+!ENTRY net.sourceforge.pmd.eclipse.plugin 2 0 2023-01-11 14:37:29.419
+!MESSAGE Removed misconfigured rule: LoosePackageCoupling  cause: No packages or classes specified
+
+!ENTRY net.sourceforge.pmd.eclipse.plugin 2 0 2023-01-11 14:37:29.456
+!MESSAGE There were configuration errors!
+LoosePackageCoupling: No packages or classes specified
+
+
+!ENTRY net.sourceforge.pmd.eclipse.plugin 2 0 2023-01-11 14:44:38.892
+!MESSAGE Removed misconfigured rule: LoosePackageCoupling  cause: No packages or classes specified
+
+!ENTRY net.sourceforge.pmd.eclipse.plugin 2 0 2023-01-11 14:44:39.722
+!MESSAGE There were configuration errors!
+LoosePackageCoupling: No packages or classes specified
+
+
+!ENTRY net.sourceforge.pmd.eclipse.plugin 2 0 2023-01-11 14:44:52.052
+!MESSAGE Removed misconfigured rule: LoosePackageCoupling  cause: No packages or classes specified
+
+!ENTRY net.sourceforge.pmd.eclipse.plugin 2 0 2023-01-11 14:44:52.095
+!MESSAGE There were configuration errors!
+LoosePackageCoupling: No packages or classes specified
+
+
+!ENTRY net.sourceforge.pmd.eclipse.plugin 2 0 2023-01-11 14:45:07.522
+!MESSAGE Removed misconfigured rule: LoosePackageCoupling  cause: No packages or classes specified
+
+!ENTRY net.sourceforge.pmd.eclipse.plugin 2 0 2023-01-11 14:45:07.559
+!MESSAGE There were configuration errors!
+LoosePackageCoupling: No packages or classes specified
+
+
+!ENTRY net.sourceforge.pmd.eclipse.plugin 2 0 2023-01-11 14:45:13.621
+!MESSAGE Removed misconfigured rule: LoosePackageCoupling  cause: No packages or classes specified
+
+!ENTRY net.sourceforge.pmd.eclipse.plugin 2 0 2023-01-11 14:45:13.662
+!MESSAGE There were configuration errors!
+LoosePackageCoupling: No packages or classes specified
+
+
+!ENTRY net.sourceforge.pmd.eclipse.plugin 2 0 2023-01-11 14:47:40.786
+!MESSAGE Removed misconfigured rule: LoosePackageCoupling  cause: No packages or classes specified
+
+!ENTRY net.sourceforge.pmd.eclipse.plugin 2 0 2023-01-11 14:47:40.826
+!MESSAGE There were configuration errors!
+LoosePackageCoupling: No packages or classes specified
+
+
+!ENTRY net.sourceforge.pmd.eclipse.plugin 2 0 2023-01-11 14:49:29.310
+!MESSAGE Removed misconfigured rule: LoosePackageCoupling  cause: No packages or classes specified
+
+!ENTRY net.sourceforge.pmd.eclipse.plugin 2 0 2023-01-11 14:49:29.354
+!MESSAGE There were configuration errors!
+LoosePackageCoupling: No packages or classes specified
+
+
+!ENTRY net.sourceforge.pmd.eclipse.plugin 2 0 2023-01-11 14:50:11.451
+!MESSAGE Removed misconfigured rule: LoosePackageCoupling  cause: No packages or classes specified
+
+!ENTRY net.sourceforge.pmd.eclipse.plugin 2 0 2023-01-11 14:50:11.486
+!MESSAGE There were configuration errors!
+LoosePackageCoupling: No packages or classes specified
+
+
+!ENTRY net.sourceforge.pmd.eclipse.plugin 2 0 2023-01-11 14:54:32.062
+!MESSAGE Removed misconfigured rule: LoosePackageCoupling  cause: No packages or classes specified
+
+!ENTRY net.sourceforge.pmd.eclipse.plugin 2 0 2023-01-11 14:54:32.128
+!MESSAGE There were configuration errors!
+LoosePackageCoupling: No packages or classes specified
+
+
+!ENTRY net.sourceforge.pmd.eclipse.plugin 2 0 2023-01-11 14:55:29.867
+!MESSAGE Removed misconfigured rule: LoosePackageCoupling  cause: No packages or classes specified
+
+!ENTRY net.sourceforge.pmd.eclipse.plugin 2 0 2023-01-11 14:55:29.925
+!MESSAGE There were configuration errors!
+LoosePackageCoupling: No packages or classes specified
+
+
+!ENTRY net.sourceforge.pmd.eclipse.plugin 2 0 2023-01-11 15:00:30.853
+!MESSAGE Removed misconfigured rule: LoosePackageCoupling  cause: No packages or classes specified
+
+!ENTRY net.sourceforge.pmd.eclipse.plugin 2 0 2023-01-11 15:00:30.892
+!MESSAGE There were configuration errors!
+LoosePackageCoupling: No packages or classes specified
+
+
+!ENTRY net.sourceforge.pmd.eclipse.plugin 2 0 2023-01-11 15:00:32.206
+!MESSAGE Removed misconfigured rule: LoosePackageCoupling  cause: No packages or classes specified
+
+!ENTRY net.sourceforge.pmd.eclipse.plugin 2 0 2023-01-11 15:00:32.238
+!MESSAGE There were configuration errors!
+LoosePackageCoupling: No packages or classes specified
+
+
+!ENTRY net.sourceforge.pmd.eclipse.plugin 2 0 2023-01-11 15:00:32.474
+!MESSAGE Removed misconfigured rule: LoosePackageCoupling  cause: No packages or classes specified
+
+!ENTRY net.sourceforge.pmd.eclipse.plugin 2 0 2023-01-11 15:00:32.506
+!MESSAGE There were configuration errors!
+LoosePackageCoupling: No packages or classes specified
+
+
+!ENTRY net.sourceforge.pmd.eclipse.plugin 2 0 2023-01-11 15:02:10.453
+!MESSAGE Removed misconfigured rule: LoosePackageCoupling  cause: No packages or classes specified
+
+!ENTRY net.sourceforge.pmd.eclipse.plugin 2 0 2023-01-11 15:02:10.490
+!MESSAGE There were configuration errors!
+LoosePackageCoupling: No packages or classes specified
+
+
+!ENTRY net.sourceforge.pmd.eclipse.plugin 2 0 2023-01-11 15:02:14.854
+!MESSAGE Removed misconfigured rule: LoosePackageCoupling  cause: No packages or classes specified
+
+!ENTRY net.sourceforge.pmd.eclipse.plugin 2 0 2023-01-11 15:02:14.889
+!MESSAGE There were configuration errors!
+LoosePackageCoupling: No packages or classes specified
+
+
+!ENTRY net.sourceforge.pmd.eclipse.plugin 2 0 2023-01-11 15:02:18.556
+!MESSAGE Removed misconfigured rule: LoosePackageCoupling  cause: No packages or classes specified
+
+!ENTRY net.sourceforge.pmd.eclipse.plugin 2 0 2023-01-11 15:02:18.592
+!MESSAGE There were configuration errors!
+LoosePackageCoupling: No packages or classes specified
+
+
+!ENTRY net.sourceforge.pmd.eclipse.plugin 2 0 2023-01-11 15:02:23.807
+!MESSAGE Removed misconfigured rule: LoosePackageCoupling  cause: No packages or classes specified
+
+!ENTRY net.sourceforge.pmd.eclipse.plugin 2 0 2023-01-11 15:02:23.842
+!MESSAGE There were configuration errors!
+LoosePackageCoupling: No packages or classes specified
+
+
+!ENTRY net.sourceforge.pmd.eclipse.plugin 2 0 2023-01-11 15:02:28.706
+!MESSAGE Removed misconfigured rule: LoosePackageCoupling  cause: No packages or classes specified
+
+!ENTRY net.sourceforge.pmd.eclipse.plugin 2 0 2023-01-11 15:02:28.743
+!MESSAGE There were configuration errors!
+LoosePackageCoupling: No packages or classes specified
+

@@ -27,7 +27,7 @@
 		<!-- start lnb-->
 			<div id="lnb_wrap" class="lnb">
 				<div class="lnb_tit_hidden">
-					<h2 style="color:#fff;">기관소개</h2>
+					<h2 style="color:#fff;">기관안내</h2>
 				</div>
 				<ul>
 					<li class="lnb_dep1"><img alt="" src="${path1}/resources/img/icon_home.png">
