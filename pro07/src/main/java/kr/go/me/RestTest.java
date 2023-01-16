@@ -40,7 +40,7 @@ public class RestTest {
 	@ResponseBody
 	@GetMapping("test1")
 	public String test1(HttpServletRequest request) {
-		log.info("URL TEST : "+request.getRequestURI());
+		log.info("URL TEST : "+request.getRequestURL());
 		log.info("URI TEST : "+request.getRequestURI());
 		log.info("JAVA CLASS : "+this.getClass().getName());
 		return "application request url";

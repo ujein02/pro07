@@ -9,7 +9,7 @@ Spring legacy + Oracle + MyBatis + Spring tx + Spring security + JSON + AOP
 
 
 ## ⚙ 개발 환경
-- 운영체제 : Windows 11
+- 운영체제 : Windows 10
 - 개발환경(IDE) : STS3
 - JDK 버전 : JDK 1.8
 - 데이터 베이스 : Oracle
@@ -27,10 +27,6 @@ Spring legacy + Oracle + MyBatis + Spring tx + Spring security + JSON + AOP
 - Servlet
 - junit
 - JSON
-
-
-## ⚙편집기
-- STS3 
 
 
 ## 클래스 설계

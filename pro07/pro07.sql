@@ -3,6 +3,9 @@ create table sample7(id varchar2(20), pw varchar2(20));
 insert into sample values('kkk','1234');
 insert into sample values('test','1234');
 
+select * from sample;
+
+
 commit;
 
 -- 공지사항
